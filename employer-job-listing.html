@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PROD</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">My Jobs <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Candidates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Company</a>
+          </li>
+        </ul>
+        <div class="flex-center-vh">
+          <a href="#" class="btn btn-primary mr30">New Job</a>
+          <div class="avatar">
+            <img src="assets/avatar-border.svg" alt="avatar">
+            <img class="avatar-img" src="assets/avatar.png" alt="avatar">
+          </div>
+        </div>
+      </div>
+    </nav> <!-- end nav -->
+  </header> <!-- end header -->
+
+  <!-- main -->
+  <main>
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row flex-row-reverse">
+          <aside class="col right-side border-left col-side bg-white vh-100">test</aside>
+          <aside class="col left-side col-side">
+            <!-- left-side-header -->
+            <div class="side-header flex-center-vh justify-content-between pb30">
+              <div class="flex-center-vh justify-content-start">
+                <div class="primary-title">
+                  <h2 class="mb-0"><a href="#" class="fw600 fs20 text-black">Job Listings</a></h2>
+                </div>
+                <div class="flex-center-vh">
+                  <h3 class="fw600 fs14 mb-0 total-item mr30">Open Jobs <span class="fw500 fs12 total">27</span></h3>
+                  <h3 class="fw400 fs14 mb-0 total-item">Closed Jobs <span class="fw400 fs12 total">10</span></h3>
+                </div>
+              </div>
+              <div class="input-group search-group">
+                <div class="input-group-prepend">
+                  <button class="btn py-0 px-2" type="button"><img src="assets/icons/search.svg" alt="search"></button>
+                </div>
+                <input type="search" class="form-control" placeholder="Search for job listings" aria-label=""
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <!-- left-side-body -->
+            <div class="left-side-body">
+              <!-- jobs-list -->
+              <ul class="list-unstyled jobs-list">
+                <li>
+                  <div class="job-img col flex-center-vh p-0">
+                    <img src="assets/job-img-1.png" alt="job-img-1">
+                  </div>
+                  <div class="details col p-0">
+                    <div class="d-flex justify-content-between top-item pb30">
+                      <div class="job-details">
+                        <h4 class="fs15 fw600 job-title">Car Driver</h4>
+                        <span class="fs14 fw400 job-rate">£10/hr</span>
+                        <span class="badge badge-primary badge-sm">FULL TIME</span>
+                      </div>
+                      <div class="published flex-center-vh align-content-start text-secondary fw400 fs13">
+                        <span><img src="assets/icons/published.png" alt="published" style="margin-top: -3px;">
+                          123</span>
+                        <span class="mx-2 text-black">•</span>
+                        <span class="mr-3">1 day</span>
+                        <span class="dropdown">
+                          <button class="btn p-0" type="button" id="dropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img class="w-50" src="assets/icons/dots.svg" alt="dots">
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                            <ul class="list-unstyled dropdown-links-list">
+                              <li><a class="dropdown-item" href="#!">
+                                  View candidates
+                                  <img src="assets/icons/person.svg" alt="person">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  View Job
+                                  <img src="assets/icons/job.svg" alt="job">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  Edit
+                                  <img src="assets/icons/edit.svg" alt="edit">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  Duplicate
+                                  <img src="assets/icons/duplicate.svg" alt="duplicate">
+                                </a>
+                              </li>
+                            </ul>
+                            <a class="dropdown-item dropdown-close" href="#!">
+                              Close
+                              <img src="assets/icons/delete.svg" alt="delete">
+                            </a>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="bottom-item flex-center-vh justify-content-between">
+                      <div class="flex-center-vh">
+                        <div class="location mr-2">
+                          <img src="assets/icons/location.svg" alt="location">
+                        </div>
+                        <div class="location-container">
+                          <h3 class="fw500 fs13 lh12">Greater London</h3>
+                          <h4 class="fw400 fs12 text-secondary mb-0 lh12">KT9 1RH</h4>
+                        </div>
+                      </div>
+                      <div>
+                        <ul class="list-unstyled flex-center-vh">
+                          <li>
+                            <span class="badge badge-light badge-md mr12 radius12">
+                              Applied <span class="ml-1 text-secondary fs12">23</span></span>
+                          </li>
+                          <li>
+                            <span class="badge badge-light badge-md mr12 radius12">
+                              Hired <span class="ml-1 text-secondary fs12">5</span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="badge badge-light badge-md radius12">
+                              Denied <span class="ml-1 text-secondary fs12">12</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="job-img col flex-center-vh p-0">
+                    <img src="assets/job-img-2.png" alt="job-img-1">
+                  </div>
+                  <div class="details col p-0">
+                    <div class="d-flex justify-content-between top-item pb30">
+                      <div class="job-details">
+                        <h4 class="fs15 fw600 job-title">Car Driver</h4>
+                        <span class="fs14 fw400 job-rate">£10/hr</span>
+                        <span class="badge badge-primary badge-sm">FULL TIME</span>
+                      </div>
+                      <div class="published flex-center-vh align-content-start text-secondary fw400 fs13">
+                        <span><img src="assets/icons/published.png" alt="published" style="margin-top: -3px;">
+                          123</span>
+                        <span class="mx-2 text-black">•</span>
+                        <span class="mr-3">1 day</span>
+                        <span class="dropdown">
+                          <button class="btn p-0" type="button" id="dropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img class="w-50" src="assets/icons/dots.svg" alt="dots">
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                            <ul class="list-unstyled dropdown-links-list">
+                              <li><a class="dropdown-item" href="#!">
+                                  View candidates
+                                  <img src="assets/icons/person.svg" alt="person">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  View Job
+                                  <img src="assets/icons/job.svg" alt="job">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  Edit
+                                  <img src="assets/icons/edit.svg" alt="edit">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  Duplicate
+                                  <img src="assets/icons/duplicate.svg" alt="duplicate">
+                                </a>
+                              </li>
+                            </ul>
+                            <a class="dropdown-item dropdown-close" href="#!">
+                              Close
+                              <img src="assets/icons/delete.svg" alt="delete">
+                            </a>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="bottom-item flex-center-vh justify-content-between">
+                      <div class="flex-center-vh">
+                        <div class="location mr-2">
+                          <img src="assets/icons/location.svg" alt="location">
+                        </div>
+                        <div class="location-container">
+                          <h3 class="fw500 fs13 lh12">Greater London</h3>
+                          <h4 class="fw400 fs12 text-secondary mb-0 lh12">KT9 1RH</h4>
+                        </div>
+                      </div>
+                      <div>
+                        <ul class="list-unstyled flex-center-vh">
+                          <li>
+                            <span class="badge badge-light badge-md mr12 radius12">
+                              Applied <span class="ml-1 text-secondary fs12">23</span></span>
+                          </li>
+                          <li>
+                            <span class="badge badge-light badge-md mr12 radius12">
+                              Hired <span class="ml-1 text-secondary fs12">5</span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="badge badge-light badge-md radius12">
+                              Denied <span class="ml-1 text-secondary fs12">12</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="job-img col flex-center-vh p-0">
+                    <img src="assets/job-img-3.png" alt="job-img-1">
+                  </div>
+                  <div class="details col p-0">
+                    <div class="d-flex justify-content-between top-item pb30">
+                      <div class="job-details">
+                        <h4 class="fs15 fw600 job-title">Car Driver</h4>
+                        <span class="fs14 fw400 job-rate">£10/hr</span>
+                        <span class="badge badge-primary badge-sm">FULL TIME</span>
+                      </div>
+                      <div class="published flex-center-vh align-content-start text-secondary fw400 fs13">
+                        <span><img src="assets/icons/published.png" alt="published" style="margin-top: -3px;">
+                          123</span>
+                        <span class="mx-2 text-black">•</span>
+                        <span class="mr-3">1 day</span>
+                        <span class="dropdown">
+                          <button class="btn p-0" type="button" id="dropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img class="w-50" src="assets/icons/dots.svg" alt="dots">
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                            <ul class="list-unstyled dropdown-links-list">
+                              <li><a class="dropdown-item" href="#!">
+                                  View candidates
+                                  <img src="assets/icons/person.svg" alt="person">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  View Job
+                                  <img src="assets/icons/job.svg" alt="job">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  Edit
+                                  <img src="assets/icons/edit.svg" alt="edit">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  Duplicate
+                                  <img src="assets/icons/duplicate.svg" alt="duplicate">
+                                </a>
+                              </li>
+                            </ul>
+                            <a class="dropdown-item dropdown-close" href="#!">
+                              Close
+                              <img src="assets/icons/delete.svg" alt="delete">
+                            </a>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="bottom-item flex-center-vh justify-content-between">
+                      <div class="flex-center-vh">
+                        <div class="location mr-2">
+                          <img src="assets/icons/location.svg" alt="location">
+                        </div>
+                        <div class="location-container">
+                          <h3 class="fw500 fs13 lh12">Greater London</h3>
+                          <h4 class="fw400 fs12 text-secondary mb-0 lh12">KT9 1RH</h4>
+                        </div>
+                      </div>
+                      <div>
+                        <ul class="list-unstyled flex-center-vh">
+                          <li>
+                            <span class="badge badge-light badge-md mr12 radius12">
+                              Applied <span class="ml-1 text-secondary fs12">23</span></span>
+                          </li>
+                          <li>
+                            <span class="badge badge-light badge-md mr12 radius12">
+                              Hired <span class="ml-1 text-secondary fs12">5</span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="badge badge-light badge-md radius12">
+                              Denied <span class="ml-1 text-secondary fs12">12</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="job-img col flex-center-vh p-0">
+                    <img src="assets/job-img-4.png" alt="job-img-1">
+                  </div>
+                  <div class="details col p-0">
+                    <div class="d-flex justify-content-between top-item pb30">
+                      <div class="job-details">
+                        <h4 class="fs15 fw600 job-title">Car Driver</h4>
+                        <span class="fs14 fw400 job-rate">£10/hr</span>
+                        <span class="badge badge-primary badge-sm">FULL TIME</span>
+                      </div>
+                      <div class="published flex-center-vh align-content-start text-secondary fw400 fs13">
+                        <span><img src="assets/icons/published.png" alt="published" style="margin-top: -3px;">
+                          123</span>
+                        <span class="mx-2 text-black">•</span>
+                        <span class="mr-3">1 day</span>
+                        <span class="dropdown">
+                          <button class="btn p-0" type="button" id="dropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img class="w-50" src="assets/icons/dots.svg" alt="dots">
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                            <ul class="list-unstyled dropdown-links-list">
+                              <li><a class="dropdown-item" href="#!">
+                                  View candidates
+                                  <img src="assets/icons/person.svg" alt="person">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  View Job
+                                  <img src="assets/icons/job.svg" alt="job">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  Edit
+                                  <img src="assets/icons/edit.svg" alt="edit">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  Duplicate
+                                  <img src="assets/icons/duplicate.svg" alt="duplicate">
+                                </a>
+                              </li>
+                            </ul>
+                            <a class="dropdown-item dropdown-close" href="#!">
+                              Close
+                              <img src="assets/icons/delete.svg" alt="delete">
+                            </a>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="bottom-item flex-center-vh justify-content-between">
+                      <div class="flex-center-vh">
+                        <div class="location mr-2">
+                          <img src="assets/icons/location.svg" alt="location">
+                        </div>
+                        <div class="location-container">
+                          <h3 class="fw500 fs13 lh12">Greater London</h3>
+                          <h4 class="fw400 fs12 text-secondary mb-0 lh12">KT9 1RH</h4>
+                        </div>
+                      </div>
+                      <div>
+                        <ul class="list-unstyled flex-center-vh">
+                          <li>
+                            <span class="badge badge-light badge-md mr12 radius12">
+                              Applied <span class="ml-1 text-secondary fs12">23</span></span>
+                          </li>
+                          <li>
+                            <span class="badge badge-light badge-md mr12 radius12">
+                              Hired <span class="ml-1 text-secondary fs12">5</span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="badge badge-light badge-md radius12">
+                              Denied <span class="ml-1 text-secondary fs12">12</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="job-img col flex-center-vh p-0">
+                    <img src="assets/job-img-4.png" alt="job-img-1">
+                  </div>
+                  <div class="details col p-0">
+                    <div class="d-flex justify-content-between top-item pb30">
+                      <div class="job-details">
+                        <h4 class="fs15 fw600 job-title">Car Driver</h4>
+                        <span class="fs14 fw400 job-rate">£10/hr</span>
+                        <span class="badge badge-primary badge-sm">FULL TIME</span>
+                      </div>
+                      <div class="published flex-center-vh align-content-start text-secondary fw400 fs13">
+                        <span><img src="assets/icons/published.png" alt="published" style="margin-top: -3px;">
+                          123</span>
+                        <span class="mx-2 text-black">•</span>
+                        <span class="mr-3">1 day</span>
+                        <span class="dropdown">
+                          <button class="btn p-0" type="button" id="dropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img class="w-50" src="assets/icons/dots.svg" alt="dots">
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                            <ul class="list-unstyled dropdown-links-list">
+                              <li><a class="dropdown-item" href="#!">
+                                  View candidates
+                                  <img src="assets/icons/person.svg" alt="person">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  View Job
+                                  <img src="assets/icons/job.svg" alt="job">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  Edit
+                                  <img src="assets/icons/edit.svg" alt="edit">
+                                </a>
+                              </li>
+                              <li><a class="dropdown-item" href="#!">
+                                  Duplicate
+                                  <img src="assets/icons/duplicate.svg" alt="duplicate">
+                                </a>
+                              </li>
+                            </ul>
+                            <a class="dropdown-item dropdown-close" href="#!">
+                              Close
+                              <img src="assets/icons/delete.svg" alt="delete">
+                            </a>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="bottom-item flex-center-vh justify-content-between">
+                      <div class="flex-center-vh">
+                        <div class="location mr-2">
+                          <img src="assets/icons/location.svg" alt="location">
+                        </div>
+                        <div class="location-container">
+                          <h3 class="fw500 fs13 lh12">Greater London</h3>
+                          <h4 class="fw400 fs12 text-secondary mb-0 lh12">KT9 1RH</h4>
+                        </div>
+                      </div>
+                      <div>
+                        <ul class="list-unstyled flex-center-vh">
+                          <li>
+                            <span class="badge badge-light badge-md mr12 radius12">
+                              Applied <span class="ml-1 text-secondary fs12">23</span></span>
+                          </li>
+                          <li>
+                            <span class="badge badge-light badge-md mr12 radius12">
+                              Hired <span class="ml-1 text-secondary fs12">5</span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="badge badge-light badge-md radius12">
+                              Denied <span class="ml-1 text-secondary fs12">12</span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main> <!-- end main -->
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
