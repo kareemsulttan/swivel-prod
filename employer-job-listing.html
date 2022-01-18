@@ -18,7 +18,6 @@
 
   <!-- header -->
   <header>
-
     <!-- nav -->
     <nav class="navbar navbar-expand-lg bg-white border-bottom">
       <a class="navbar-brand" href="#">
@@ -59,10 +58,61 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row flex-row-reverse">
-          <aside class="col right-side border-left col-side bg-white vh-100">test</aside>
+          <aside class="col right-side border-left col-side bg-white vh-100">
+
+            <!-- right-side-header -->
+            <div class="right-side-header pb-4 flex-center-vh justify-content-between">
+              <div>
+                <h2 class="fs17 fw700 m-0 lh30">Resume</h2>
+              </div>
+              <div>
+                <span class="dropdown selectbox-menu dropdown-with-arrow">
+                  <button class="btn p-0 dropdown-toggle" type="button" id="dropdown2" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Last month
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-md dropdown-menu-right" aria-labelledby="dropdown2">
+                    <ul class="list-unstyled dropdown-links-list mb-0">
+                      <li><a class="dropdown-item" href="#!">Last day</a></li>
+                      <li><a class="dropdown-item" href="#!">Last week</a></li>
+                      <li><a class="dropdown-item" href="#!">Last month</a></li>
+                      <li><a class="dropdown-item" href="#!">Last 3 months</a></li>
+                    </ul>
+                  </div>
+                </span>
+              </div>
+            </div>
+
+            <!-- right side body -->
+            <div class="right-side-body">
+              <div class="flex-center-vh justify-content-between">
+                <div class="col info-card border p-3 mb-3">
+                  <div class="mb-3"><img src="assets/icons/total-job.png" alt="total-job"></div>
+                  <h3 class="fs17 fw600">27</h3>
+                  <h4 class="fw400 fs14">Total jobs</h4>
+                </div>
+                <div class="col info-card border p-3 mb-3">
+                  <div class="mb-3"><img src="assets/icons/applied.png" alt="applied"></div>
+                  <h3 class="fs17 fw600">56</h3>
+                  <h4 class="fw400 fs14">Total applied</h4>
+                </div>
+                <div class="col info-card border p-3 mb-3">
+                  <div class="mb-3"><img src="assets/icons/interviewed.png" alt="interviewed"></div>
+                  <h3 class="fs17 fw600">10</h3>
+                  <h4 class="fw400 fs14">Interviewed</h4>
+                </div>
+                <div class="col info-card border p-3 mb-3">
+                  <div class="mb-3"><img src="assets/icons/hired.png" alt="hired"></div>
+                  <h3 class="fs17 fw600">2</h3>
+                  <h4 class="fw400 fs14">Hired</h4>
+                </div>
+              </div>
+            </div>
+          </aside>
           <aside class="col left-side col-side">
+
             <!-- left-side-header -->
-            <div class="side-header flex-center-vh justify-content-between pb30">
+            <div class="left-side-header flex-center-vh justify-content-between pb30">
               <div class="flex-center-vh justify-content-start">
                 <div class="primary-title">
                   <h2 class="mb-0"><a href="#" class="fw600 fs20 text-black">Job Listings</a></h2>
@@ -80,11 +130,12 @@
                   aria-describedby="basic-addon1">
               </div>
             </div>
+
             <!-- left-side-body -->
             <div class="left-side-body">
               <!-- jobs-list -->
-              <ul class="list-unstyled jobs-list">
-                <li>
+              <ul class="list-unstyled jobs-list pb-3">
+                <li class="job-card">
                   <div class="job-img col flex-center-vh p-0">
                     <img src="assets/job-img-1.png" alt="job-img-1">
                   </div>
@@ -105,7 +156,7 @@
                             aria-haspopup="true" aria-expanded="false">
                             <img class="w-50" src="assets/icons/dots.svg" alt="dots">
                           </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                          <div class="dropdown-menu with-icons dropdown-menu-lg" aria-labelledby="dropdown">
                             <ul class="list-unstyled dropdown-links-list">
                               <li><a class="dropdown-item" href="#!">
                                   View candidates
@@ -137,8 +188,8 @@
                       </div>
                     </div>
                     <div class="bottom-item flex-center-vh justify-content-between">
-                      <div class="flex-center-vh">
-                        <div class="location mr-2">
+                      <div class="location flex-center-vh">
+                        <div class="mr-2">
                           <img src="assets/icons/location.svg" alt="location">
                         </div>
                         <div class="location-container">
@@ -167,7 +218,7 @@
                     </div>
                   </div>
                 </li>
-                <li>
+                <li class="job-card">
                   <div class="job-img col flex-center-vh p-0">
                     <img src="assets/job-img-2.png" alt="job-img-1">
                   </div>
@@ -188,7 +239,7 @@
                             aria-haspopup="true" aria-expanded="false">
                             <img class="w-50" src="assets/icons/dots.svg" alt="dots">
                           </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                          <div class="dropdown-menu with-icons dropdown-menu-lg" aria-labelledby="dropdown">
                             <ul class="list-unstyled dropdown-links-list">
                               <li><a class="dropdown-item" href="#!">
                                   View candidates
@@ -220,8 +271,8 @@
                       </div>
                     </div>
                     <div class="bottom-item flex-center-vh justify-content-between">
-                      <div class="flex-center-vh">
-                        <div class="location mr-2">
+                      <div class="location flex-center-vh">
+                        <div class="mr-2">
                           <img src="assets/icons/location.svg" alt="location">
                         </div>
                         <div class="location-container">
@@ -250,7 +301,7 @@
                     </div>
                   </div>
                 </li>
-                <li>
+                <li class="job-card">
                   <div class="job-img col flex-center-vh p-0">
                     <img src="assets/job-img-3.png" alt="job-img-1">
                   </div>
@@ -271,7 +322,7 @@
                             aria-haspopup="true" aria-expanded="false">
                             <img class="w-50" src="assets/icons/dots.svg" alt="dots">
                           </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                          <div class="dropdown-menu with-icons dropdown-menu-lg" aria-labelledby="dropdown">
                             <ul class="list-unstyled dropdown-links-list">
                               <li><a class="dropdown-item" href="#!">
                                   View candidates
@@ -303,8 +354,8 @@
                       </div>
                     </div>
                     <div class="bottom-item flex-center-vh justify-content-between">
-                      <div class="flex-center-vh">
-                        <div class="location mr-2">
+                      <div class="location flex-center-vh">
+                        <div class="mr-2">
                           <img src="assets/icons/location.svg" alt="location">
                         </div>
                         <div class="location-container">
@@ -333,7 +384,7 @@
                     </div>
                   </div>
                 </li>
-                <li>
+                <li class="job-card">
                   <div class="job-img col flex-center-vh p-0">
                     <img src="assets/job-img-4.png" alt="job-img-1">
                   </div>
@@ -354,7 +405,7 @@
                             aria-haspopup="true" aria-expanded="false">
                             <img class="w-50" src="assets/icons/dots.svg" alt="dots">
                           </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                          <div class="dropdown-menu with-icons dropdown-menu-lg" aria-labelledby="dropdown">
                             <ul class="list-unstyled dropdown-links-list">
                               <li><a class="dropdown-item" href="#!">
                                   View candidates
@@ -386,8 +437,8 @@
                       </div>
                     </div>
                     <div class="bottom-item flex-center-vh justify-content-between">
-                      <div class="flex-center-vh">
-                        <div class="location mr-2">
+                      <div class="location flex-center-vh">
+                        <div class="mr-2">
                           <img src="assets/icons/location.svg" alt="location">
                         </div>
                         <div class="location-container">
@@ -416,7 +467,7 @@
                     </div>
                   </div>
                 </li>
-                <li>
+                <li class="job-card">
                   <div class="job-img col flex-center-vh p-0">
                     <img src="assets/job-img-4.png" alt="job-img-1">
                   </div>
@@ -437,7 +488,7 @@
                             aria-haspopup="true" aria-expanded="false">
                             <img class="w-50" src="assets/icons/dots.svg" alt="dots">
                           </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdown">
+                          <div class="dropdown-menu with-icons dropdown-menu-lg" aria-labelledby="dropdown">
                             <ul class="list-unstyled dropdown-links-list">
                               <li><a class="dropdown-item" href="#!">
                                   View candidates
@@ -469,8 +520,8 @@
                       </div>
                     </div>
                     <div class="bottom-item flex-center-vh justify-content-between">
-                      <div class="flex-center-vh">
-                        <div class="location mr-2">
+                      <div class="location flex-center-vh">
+                        <div class="mr-2">
                           <img src="assets/icons/location.svg" alt="location">
                         </div>
                         <div class="location-container">
@@ -501,11 +552,58 @@
                 </li>
               </ul>
             </div>
+
+            <!-- left-side-footer -->
+            <div class="left-side-footer flex-center-vh justify-content-between">
+              <div>
+                <span class="fs14 fw400">Showing: 5 of 27</span>
+              </div>
+              <div>
+                <nav aria-label="Page navigation">
+                  <ul class="pagination mb-0">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span class="left-page-arrow page-arrow" aria-hidden="true">
+                          <img src="assets/icons/left-nav-arrow.svg" alt="left-nav-arrow">
+                          <img src="assets/icons/left-nav-arrow-white.svg" alt="left-nav-arrow">
+                        </span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link page-link-dots" href="#">...</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span class="right-page-arrow page-arrow" aria-hidden="true">
+                          <img src="assets/icons/right-nav-arrow.svg" alt="right-nav-arrow">
+                          <img src="assets/icons/right-nav-arrow-white.svg" alt="right-nav-arrow-white">
+                        </span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+
           </aside>
         </div>
       </div>
     </section>
   </main> <!-- end main -->
+
+  <!-- footer -->
+  <footer class="flex-center-vh justify-content-between px30 py12 fs12 fw400">
+    <div>
+      <p class="m-0 text-info">©2021 swivel</p>
+    </div>
+    <div>
+      <a class="text-info mr-4" href="#">terms & conditions</a>
+      <a class="text-info" href="#">privacy policy</a>
+    </div>
+  </footer>
 
   <script src="js/jquery-3.0.0.min.js"></script>
   <script src="js/popper.min.js"></script>
