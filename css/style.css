@@ -21,7 +21,7 @@ Date            :  15/01/2022
  :root {
    --white: #fff;
    --dark-gray: #343434;
-   --light: #E2E2E2;
+   --cyan: #E2E2E2;
    --black: #272020;
    --secondary: #666A74;
    --px12: .75rem;
@@ -99,8 +99,8 @@ input[type=number]
 {-moz-appearance:textfield}
 
 .form-control {
-  border-color: var(--light);
-  border-radius: var(--px12);
+  border-color: var(--cyan);
+  border-radius: var(--px12)!important;
   padding: .844rem 1rem!important;
   font-size: var(--px14);
   color: var(--secondary);
@@ -138,6 +138,7 @@ input[type=number]
 }
 
 /*radio button*/
+
 .custom-control-input {
   top: 4px;
 }
@@ -169,7 +170,22 @@ line-height: 1.625rem;
   background-image: url(../assets/icons/radio-checked.svg);
 }
 
-/*MODAL STEP 4 - UPLOAD VEDIOS*/
+/*inner search*/
+
+.inner-search-btn input[type="search"] {
+  position: relative;
+  padding-left: 3.125rem!important;
+}
+.inner-search-btn .input-group-prepend {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(10px, -50% );
+  z-index: 4;
+}
+
+
+/*UPLOAD IMAGES*/
 
 .form__container {
   position: relative;
@@ -200,7 +216,7 @@ line-height: 1.625rem;
 .form__image-container {
   position: relative;
   padding: var(--px12);
-  border-color: var(--light)!important;
+  border-color: var(--cyan)!important;
   border-radius: var(--px12);
 }
 .form__image-container .upload-img {
@@ -211,15 +227,15 @@ line-height: 1.625rem;
   border-radius: var(--px12);
 }
 .form__image-container:after {
-content: url(../assets/icons/delete-black.svg);
-position: absolute;
-top: 50%;
-right: 0;
-transform: translate(-20px, -50%);
-left: initial;
-opacity: 1;
-transition: opacity 0.2s ease-in-out;
-cursor: pointer;
+  content: url(../assets/icons/delete-black.svg);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-20px, -50%);
+  left: initial;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
 }
 .img-name span:first-child {
   line-height: 20px;
@@ -237,6 +253,7 @@ cursor: pointer;
   background: linear-gradient(90deg, #E9F354 0%, #B9F868 100%);
   border-radius: 2px;
 }
+
 /*dropdown-menu*/
 
 .dropdown-menu {
@@ -483,7 +500,7 @@ main {
   max-width: 155px;
   flex-basis: auto;
   border-radius: var(--px12);
-  border-color: var(--light)!important;
+  border-color: var(--cyan)!important;
 }
 
 /*Candidates*/
@@ -508,7 +525,7 @@ main {
 
 /*creat job*/
 
-#create-job-page .left-side {
+.create-job-page .left-side {
   max-width: 665px;
 }
 #create-job-list .nav-item .link-line {
