@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Candidates</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a class="nav-link link-line" href="#">My Jobs <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-line" href="#">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-line" href="#">Company</a>
+          </li>
+        </ul>
+        <div class="flex-center-vh">
+          <a href="#" class="btn btn-primary mr30">New Job</a>
+          <div class="avatar">
+            <img src="assets/avatar-border.svg" alt="avatar">
+            <img class="avatar-img" src="assets/avatar.png" alt="avatar">
+          </div>
+        </div>
+      </div>
+    </nav> <!-- end nav -->
+  </header> <!-- end header -->
+
+  <!-- main -->
+
+  <main class="flex-grow-1">
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row flex-row-reverse">
+          <aside class="col right-side border-left col-side bg-white vh-100">
+
+            <!-- right-side-header -->
+
+            <div class="right-side-header pb-4 flex-center-vh justify-content-between">
+
+            </div>
+
+            <!-- right side body -->
+
+            <div class="right-side-body">
+
+              <!-- all candidtes tab content -->
+
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="candidate-1" role="tabpanel"
+                  aria-labelledby="candidate-1-tab">
+                  candidate-1
+                </div>
+                <div class="tab-pane fade" id="candidate-2" role="tabpanel" aria-labelledby="candidate-2-tab">
+                  candidate-2
+                </div>
+                <div class="tab-pane fade" id="candidate-3" role="tabpanel" aria-labelledby="candidate-3-tab">
+                  candidate-3
+                </div>
+                <div class="tab-pane fade" id="candidate-4" role="tabpanel" aria-labelledby="candidate-4-tab">
+                  candidate-4
+                </div>
+              </div>
+            </div>
+
+          </aside>
+
+          <aside class="col left-side col-side">
+
+            <!-- left-side-header -->
+
+            <div class="left-side-header pb30">
+
+              <div class="flex-center-vh justify-content-between pb30">
+                <div class="flex-center-vh justify-content-start title-container">
+                  <div class="primary-title">
+                    <h2 class="mb-0 fw600 fs20 text-black"><a href="#" class="with-back-arrow"></a>Car Driver</h2>
+                  </div>
+                  <div class="flex-center-vh">
+                    <h3 class="fw600 fs14 mb-0 total-item mr30">Open Jobs <span class="fw500 fs12 total">27</span></h3>
+                    <h3 class="fw400 fs14 mb-0 total-item">Closed Jobs <span class="fw400 fs12 total">10</span></h3>
+                  </div>
+                </div>
+                <div class="input-group search-group">
+                  <div class="input-group-prepend">
+                    <button class="btn py-0 px-2" type="button"><img src="assets/icons/search.svg"
+                        alt="search"></button>
+                  </div>
+                  <input type="search" class="form-control" placeholder="Search for job listings" aria-label=""
+                    aria-describedby="basic-addon1">
+                </div>
+              </div>
+
+              <!-- candidates-tab-header -->
+
+              <div class="candidates-tab candidates-tab-header">
+                <ul class="nav nav-tabs" id="main-candidates-list-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link link-rounded active" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                      aria-controls="all" aria-selected="true">All</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link link-rounded" id="applied-tab" data-toggle="tab" href="#applied" role="tab"
+                      aria-controls="applied" aria-selected="false">Applied <span
+                        class="fs13 text-secondary ml-1">10</span></a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link link-rounded" id="pending-tab" data-toggle="tab" href="#pending" role="tab"
+                      aria-controls="pending" aria-selected="false">Pending <span
+                        class="fs13 text-secondary ml-1">5</span></a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link link-rounded" id="scheduled-tab" data-toggle="tab" href="#scheduled" role="tab"
+                      aria-controls="scheduled" aria-selected="false">Scheduled <span
+                        class="fs13 text-secondary ml-1">3</span></a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link link-rounded" id="interviewed-tab" data-toggle="tab" href="#interviewed"
+                      role="tab" aria-controls="interviewed" aria-selected="false">Interviewed <span
+                        class="fs13 text-secondary ml-1">3</span></a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link link-rounded" id="hired-tab" data-toggle="tab" href="#hired" role="tab"
+                      aria-controls="hired" aria-selected="false">Hired <span
+                        class="fs13 text-secondary ml-1">3</span></a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link link-rounded" id="denied-tab" data-toggle="tab" href="#denied" role="tab"
+                      aria-controls="denied" aria-selected="false">Denied <span
+                        class="fs13 text-secondary ml-1">3</span></a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- left-side-body -->
+
+            <div class="left-side-body">
+              <div class="row no-gutters">
+                <div class="col">
+                  <div class="pr30">
+
+                    <!-- main tab content -->
+
+                    <div class="tab-content mb-4 pb30 border-bottom border-secondary" id="main-candidate-tab-content">
+                      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+
+                        <!-- all-candidates list tab -->
+
+                        <div class="candidates-list-tab all-candidates-tab">
+                          <ul class="nav nav-tabs" id="all-candidates-list" role="tablist">
+                            <li class="nav-item" role="presentation" data-bs-target=".first">
+                              <a class="nav-link active" id="candidate-1-tab" data-toggle="tab" href="#candidate-1"
+                                role="tab" aria-controls="candidate-1" aria-selected="true">candidate-1</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="candidate-2-tab" data-toggle="tab" href="#candidate-2" role="tab"
+                                aria-controls="candidate-2" aria-selected="false">candidate-2</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="candidate-3-tab" data-toggle="tab" href="#candidate-3" role="tab"
+                                aria-controls="candidate-3" aria-selected="false">candidate-3</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link" id="candidate-4-tab" data-toggle="tab" href="#candidate-4" role="tab"
+                                aria-controls="candidate-4" aria-selected="false">candidate-4</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="applied" role="tabpanel" aria-labelledby="applied-tab">applied
+                      </div>
+                      <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="pending-tab">pending
+                      </div>
+                      <div class="tab-pane fade" id="scheduled" role="tabpanel" aria-labelledby="scheduled-tab">
+                        scheduled
+                      </div>
+                      <div class="tab-pane fade" id="interviewed" role="tabpanel" aria-labelledby="interviewed-tab">
+                        interviewed</div>
+                      <div class="tab-pane fade" id="hired" role="tabpanel" aria-labelledby="hired-tab">hired</div>
+                      <div class="tab-pane fade" id="denied" role="tabpanel" aria-labelledby="denied-tab">denied</div>
+                    </div>
+
+                    <!-- left-side-footer -->
+
+                    <div class="left-side-footer flex-center-vh justify-content-between">
+                      <div>
+                        <span class="fs14 fw400">Showing: 5 of 27</span>
+                      </div>
+                      <div>
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination mb-0">
+                            <li class="page-item">
+                              <a class="page-link link-rounded" href="#" aria-label="Previous">
+                                <span class="left-page-arrow page-arrow" aria-hidden="true">
+                                  <img src="assets/icons/left-nav-arrow.svg" alt="left-nav-arrow">
+                                  <img src="assets/icons/left-nav-arrow-white.svg" alt="left-nav-arrow">
+                                </span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                            </li>
+                            <li class="page-item"><a class="page-link link-rounded current-link active" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link link-rounded current-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link link-rounded page-link-dots" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link link-rounded current-link" href="#">6</a></li>
+                            <li class="page-item">
+                              <a class="page-link link-rounded" href="#" aria-label="Next">
+                                <span class="right-page-arrow page-arrow" aria-hidden="true">
+                                  <img src="assets/icons/right-nav-arrow.svg" alt="right-nav-arrow">
+                                  <img src="assets/icons/right-nav-arrow-white.svg" alt="right-nav-arrow-white">
+                                </span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col bg-secondary">
+
+                  <!-- all candidtes tab content -->
+
+                  <div class="tab-content" id="all-candidates-tab-content">
+                    <div class="tab-pane fade show active" id="candidate-1" role="tabpanel"
+                      aria-labelledby="candidate-1-tab">
+                      candidate-1
+                    </div>
+                    <div class="tab-pane fade" id="candidate-2" role="tabpanel" aria-labelledby="candidate-2-tab">
+                      candidate-2
+                    </div>
+                    <div class="tab-pane fade" id="candidate-3" role="tabpanel" aria-labelledby="candidate-3-tab">
+                      candidate-3
+                    </div>
+                    <div class="tab-pane fade" id="candidate-4" role="tabpanel" aria-labelledby="candidate-4-tab">
+                      candidate-4
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main> <!-- end main -->
+
+  <!-- footer -->
+  <footer class="flex-center-vh justify-content-between px30 py12 fs12 fw400">
+    <div>
+      <p class="m-0 text-info">©2021 swivel</p>
+    </div>
+    <div>
+      <a class="text-info mr-4" href="#">terms & conditions</a>
+      <a class="text-info" href="#">privacy policy</a>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
