@@ -17,5 +17,31 @@ $('.btn-plus, .btn-minus').on('click', function (e) {
   }
 })
 
+// add class and remove from others
+$('.select-one li').click(function() {
+  $(this).addClass('active').siblings().removeClass('active');
+});
 
+// add class on click
+$('.select-multiple li').click(function() {
+  $(this).toggleClass('active');
+});
 
+// oprevent collapse
+$('.open-all').on('hide.bs.collapse', function (e) {
+  e.preventDefault();
+});
+
+// open all panels on click
+$('.open-all-panel').click(function () {
+  $('.open-all.collapse').collapse('show');
+  $('h2').removeClass('closed-title')
+});
+
+// INCLUDE JQUERY & JQUERY UI 1.12.1
+$( function() {
+	$( "#datepicker" ).datepicker({
+		dateFormat: "dd-mm-yy"
+		,	duration: "fast"
+	});
+} );

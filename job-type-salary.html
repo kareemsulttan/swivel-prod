@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Job location</title>
+  <title>Job type and salary</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,12 +63,13 @@
                       description</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link link-line active" id="job-location-tab" data-toggle="tab" href="#job-location"
+                    <a class="nav-link link-line" id="job-location-tab" data-toggle="tab" href="#job-location"
                       role="tab" aria-controls="job-location" aria-selected="false">Job location</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link link-line" id="job-type-salary-tab" data-toggle="tab" href="#job-type-salary"
-                      role="tab" aria-controls="job-type-salary" aria-selected="false">Job type & salary</a>
+                    <a class="nav-link link-line active" id="job-type-salary-tab" data-toggle="tab"
+                      href="#job-type-salary" role="tab" aria-controls="job-type-salary" aria-selected="false">Job type
+                      & salary</a>
                   </li>
                   <li class="nav-item" role="presentation">
                     <a class="nav-link link-line" id="videos-tab" data-toggle="tab" href="#videos" role="tab"
@@ -90,8 +91,7 @@
 
                 <!-- job-description-tab -->
 
-                <div class="tab-pane fade" id="job-description" role="tabpanel"
-                  aria-labelledby="job-description-tab">
+                <div class="tab-pane fade" id="job-description" role="tabpanel" aria-labelledby="job-description-tab">
                   <form>
                     <div class="d-flex pb-3">
                       <div class="col pr-3 pl-0">
@@ -161,7 +161,8 @@
                           <input class="form__file" id="upload-files" type="file" accept="image/*"
                             multiple="multiple" />
                         </label>
-                        <div class="total-uploaded mt-4 flex-center-vh justify-content-between border-bottom pb-3">
+                        <div
+                          class="total-uploaded mt-4 flex-center-vh justify-content-between border-bottom border-color-eb pb-3">
                           <h4 class="fs14 mb-0">Uploaded images 📷</h4>
                           <span class="fs13 text-secondary">0</span>
                         </div>
@@ -190,7 +191,7 @@
 
                 <!-- job-location -->
 
-                <div class="tab-pane fade show active" id="job-location" role="tabpanel" aria-labelledby="job-location-tab">
+                <div class="tab-pane fade" id="job-location" role="tabpanel" aria-labelledby="job-location-tab">
                   <h2 class="fs14">Job location</h2>
                   <div class="input-group inner-search-btn dropdown">
                     <div class="input-group-prepend">
@@ -216,8 +217,135 @@
                   </div>
                 </div>
 
-                <div class="tab-pane fade" id="job-type-salary" role="tabpanel" aria-labelledby="job-type-salary-tab">
-                  job-type-salary-tab
+                <div class="tab-pane fade show active" id="job-type-salary" role="tabpanel" aria-labelledby="job-type-salary-tab">
+                  <form action="">
+                    <div class="tags-container py20 pt-0 border-bottom border-color-eb">
+                      <h2 class="fs14 mb-3">Job category</h2>
+
+                      <!-- job-category-container -->
+
+                      <ul class="list-unstyled flex-center-vh mb-0 select-one job-category-container justify-content-start">
+                        <li class="active"><span class="badge badge-light badge-lg lh40 fs14 tag mr12 mb12">🛵
+                            Delivery</span></li>
+                        <li><span class="badge badge-light badge-lg lh40 fs14 tag mr12 mb12">🥐 Waiters</span></li>
+                        <li><span class="badge badge-light badge-lg lh40 fs14 tag mr12 mb12">🛍️ Retail Assistant</span>
+                        </li>
+                        <li><span class="badge badge-light badge-lg lh40 fs14 tag mr12 mb12">🛍️ Store Assistant</span>
+                        </li>
+                        <li><span class="badge badge-light badge-lg lh40 fs14 tag mr12">🍸 Bar Staff</span></li>
+                        <li><span class="badge badge-light badge-lg lh40 fs14 tag mr12">☕ Barista</span></li>
+                      </ul>
+                    </div>
+
+                    <div class="tags-container py20 border-bottom border-color-eb">
+
+                      <h2 class="fs14 mb-3">Job type</h2>
+
+                      <!-- job-type-container -->
+
+                      <ul class="list-unstyled flex-center-vh mb-0 select-one job-type-container justify-content-start">
+                        <li>
+                          <a data-toggle="collapse" class="open-all-panel" href="#open-all" aria-expanded="false"
+                            aria-controls="open-all">
+                            <span class="badge badge-light badge-xl fs13 lh40 tag mr12">Full-time</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a data-toggle="collapse" class="open-all-panel" href="#open-all" aria-expanded="false"
+                            aria-controls="open-all">
+                            <span class="badge badge-light badge-xl fs13 lh40 tag mr12">Part-time</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a data-toggle="collapse" class="open-all-panel" href="#open-all" aria-expanded="false"
+                            aria-controls="open-all">
+                            <span class="badge badge-light badge-xl fs13 lh40 tag mr12">Other</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="tags-container py20 border-bottom border-color-eb">
+                      <h2 class="fs14 mb-0 closed-title">Days of the week</h2>
+
+                      <!-- Days of the week container -->
+
+                      <div class="open-all collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <ul class="list-unstyled mt-3 flex-center-vh mb-0 days-of-the-week-container select-multiple justify-content-start">
+                          <li><span class="badge badge-light badge-lg lh40 fs12 px-3 tag mr12">Mon</span></li>
+                          <li><span class="badge badge-light badge-lg lh40 fs12 px-3 tag mr12">Tue</span></li>
+                          <li><span class="badge badge-light badge-lg lh40 fs12 px-3 tag mr12">Wed</span></li>
+                          <li><span class="badge badge-light badge-lg lh40 fs12 px-3 tag mr12">Thu</span></li>
+                          <li><span class="badge badge-light badge-lg lh40 fs12 px-3 tag mr12">Fri</span></li>
+                          <li><span class="badge badge-light badge-lg lh40 fs12 px-3 tag mr12">Sat</span></li>
+                          <li><span class="badge badge-light badge-lg lh40 fs12 px-3 tag">Sun</span></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="tags-container py20 border-bottom border-color-eb">
+                      <h2 class="fs14 mb-0 closed-title">Time of the day</h2>
+
+                      <!-- Time of the day container -->
+
+                      <div class="open-all collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <ul class="list-unstyled mt-3 flex-center-vh mb-0 time-of-the-day-container select-multiple justify-content-start">
+                          <li><span class="badge badge-light badge-xl lh40 fs12 tag mr12">Morning</span></li>
+                          <li><span class="badge badge-light badge-xl lh40 fs12 tag mr12">Afternoon</span></li>
+                          <li><span class="badge badge-light badge-xl lh40 fs12 tag mr12">Evening</span></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="tags-container py20 border-bottom border-color-eb">
+                      <h2 class="fs14 mb-0">Other preferences</h2>
+
+                      <!-- Other preferences container -->
+
+                      <ul class="list-unstyled mt-3 flex-center-vh mb-0 other-preferences-container select-multiple justify-content-start">
+                        <li><span class="badge badge-light badge-xl lh40 fs12 tag mr12">Other preferences</span></li>
+                        <li><span class="badge badge-light badge-xl lh40 fs12 tag mr12">No experience</span></li>
+                      </ul>
+                    </div>
+                    <div class="flex-center-vh align-items-end border-bottom border-color-eb">
+                      <div class="col-lg-8 p-0">
+                        <div class="form-group mb-0 py20">
+                          <label for="sallary w-100 mb-3">Sallary</label>
+                          <div class="flex-center-vh">
+                            <div class="secondary-placeholder col p-0 placeholder-top position-relative">
+                              <input type="number" class="form-control form-control-lg no-top-right-radius no-bottom-right-radius border-right-0" id="sallary" placeholder="£ 10">
+                              <span class="fs12 position-absolute placeholder-text">From</span>
+                            </div>
+                            <div class="secondary-placeholder col p-0 placeholder-top position-relative">
+                              <input type="number" class="form-control form-control-lg no-top-left-radius no-bottom-left-radius" id="sallary" placeholder="£ 12">
+                              <span class="fs12 position-absolute placeholder-text">To</span>
+                            </div>                        
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 p-0">
+                        <div class="form-group mb-0 py20 ml12">
+                          <div class="secondary-placeholder col p-0 placeholder-top position-relative">
+                            <select class="custom-select form-control form-control-lg">
+                              <option selected>Per hour</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <span class="fs12 position-absolute placeholder-text">Frequency</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group py20 mb-0">
+                      <label for="start-date">Start date</label>
+                      <div class="position-relative fixed-text">
+                        <input type="date" id="start-date" class="form-control" name="start-date">
+                        <span class="text-secondary fixed-text-left position-absolute">From</span>
+                      </div>
+                    </div>
+                  </form>
+
                 </div>
 
                 <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
