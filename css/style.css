@@ -73,6 +73,9 @@ Date            :  15/01/2022
 .no-bottom-left-radius {
   border-bottom-left-radius: 0!important;
 }
+.lh0 {
+  line-height: 0!important;
+}
  .lh12 {
    line-height: var(--px12);
  }
@@ -600,6 +603,10 @@ main {
 }
 .closed-title {
   opacity: .3;
+}
+.upload-video-input {
+  height: auto;
+  padding: 1.125rem 1.25rem 1.125rem .75rem;
 }
 
 /*footer*/
