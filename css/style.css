@@ -665,6 +665,10 @@ body {
   border-color: #E3E3E3!important;
   border-radius: 6px;
 }
+.secondary-form-control::placeholder {
+  color: #898C96;
+  font-size: .8125rem!important;
+}
 .btn-secondary:disabled {
  background-color: #E3E3E3;
  opacity: initial;
