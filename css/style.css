@@ -650,11 +650,14 @@ body {
   max-width: 405px;
   border-color: #E3E3E3!important;
 }
+.hr-login-form * {
+  color: #242A37!important;
+}
 .btn-transparent {
   border-color: #E3E3E3!important;
 }
-.text-with-line {
-  color: #898C96;
+.text-with-line div {
+  color: #898C96!important;
 }
 .cross-line {
   height: 1px;
@@ -676,9 +679,7 @@ body {
 .forgot-pass {
   border-color: #E7EBEE!important;
 }
-.sign-up-text *{
-  color: #242A37!important;
-}
+
 /*footer*/
 
 footer {
