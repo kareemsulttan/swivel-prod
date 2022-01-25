@@ -38,10 +38,9 @@ $('.open-all-panel').click(function () {
   $('h2').removeClass('closed-title')
 });
 
-// INCLUDE JQUERY & JQUERY UI 1.12.1
-$( function() {
-	$( "#datepicker" ).datepicker({
-		dateFormat: "dd-mm-yy"
-		,	duration: "fast"
-	});
-} );
+// play video on click
+jQuery( document ).ready(function($) {
+  $('.tab-video').click(function() {
+      this.paused ? this.play() : this.pause();
+  });
+});
