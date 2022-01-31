@@ -7,14 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="job-details">
+
+  <!-- Modal -->
+  <div class="modal fade modal-top" id="close-job" tabindex="-1" role="dialog" aria-labelledby="close-job-Label"
+    aria-hidden="true">
+    <div class="modal-dialog with-shadow" role="document">
+      <div class="modal-content radius12 p30 pt12">
+        <div class="modal-header border-0 pb-0 py-2 px-0">
+          <h5 class="modal-title fw600 fs17" id="close-job-Label">Are you sure you want to close this job?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt=""></span>
+          </button>
+        </div>
+        <div class="modal-body pb20 px-0 pt-2 border-0">
+          Closed jobs stop receiving applications and can not be re-opened
+        </div>
+        <div class="modal-footer justify-content-between border-0 px-0 pb-0 pt20">
+          <button type="button" class="btn bg-transparent fs14 fw600 m-0 p-0" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-dark fs15 fw600 m-0">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- header -->
   <header>
@@ -101,8 +122,8 @@
               </div>
               <div class="header-nav">
                 <ul class="list-unstyled flex-center-vh mb-0">
-                  <li><a class="fw600 mr30 text-black text-decoration-none" href="#">Close</a> </li>
-                  <li><a class="fw600 mr30 text-black text-decoration-none" href="#">Duplicate</a></li>
+                  <li><a class="fw600 mr30 text-black text-decoration-none" data-toggle="modal" data-target="#close-job" href="#close-job">Close</a> </li>
+                  <li><a class="fw600 mr30 text-black text-decoration-none" href="duplicate-job.html">Duplicate</a></li>
                   <li><a class="btn btn-primary fw66 fs15" href="#">Edit</a></li>
                 </ul>
               </div>

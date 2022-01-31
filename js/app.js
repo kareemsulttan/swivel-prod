@@ -44,3 +44,33 @@ jQuery( document ).ready(function($) {
       this.paused ? this.play() : this.pause();
   });
 });
+
+// duplicate page
+
+const duplicateContainer = document.querySelectorAll('.duplicate-form-container')
+
+duplicateContainer.forEach(function(elem){
+  const editContainer = elem.querySelector('.edit-container')
+  const editCurrent = elem.querySelector('.edit-current')
+  const editValue = elem.querySelector('.edit-value')
+  const saveValue = elem.querySelector('.save-value')
+  const updatedValue = elem.querySelector('.updated-value')
+
+  $(editCurrent).click(function() {
+    $(editValue).addClass('active');
+    $(saveValue).addClass('active');
+    $(updatedValue).addClass('d-none')
+    $(editContainer).css('height', $(editValue).height() +'px');
+  })
+  
+  $(saveValue).click(function() {
+    $(editValue).removeClass('active');
+    $(saveValue).removeClass('active');
+    $(updatedValue).removeClass('d-none')
+    $(editContainer).css('height', 'auto');
+  })
+})
+const confirmDeleteImg = document.getElementById('confirm-delete-img')
+$(confirmDeleteImg).click(function() {
+  $('.form__files-container li').hide()
+})
