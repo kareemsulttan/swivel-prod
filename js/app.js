@@ -3,7 +3,7 @@ $(".selectbox-menu .dropdown-links-list > li > a").click(function () {
   $(".selectbox-menu > .btn").text($(this).text());
 });
 
-$('.pagination li a.current-link').on('click', function(){
+$('.pagination li a.current-link').on('click', function () {
   $('.pagination li a.current-link.active').removeClass('active');
   $(this).addClass('active');
 });
@@ -18,12 +18,12 @@ $('.btn-plus, .btn-minus').on('click', function (e) {
 })
 
 // add class and remove from others
-$('.select-one li').click(function() {
+$('.select-one li').click(function () {
   $(this).addClass('active').siblings().removeClass('active');
 });
 
 // add class on click
-$('.select-multiple li').click(function() {
+$('.select-multiple li').click(function () {
   $(this).toggleClass('active');
 });
 
@@ -39,9 +39,9 @@ $('.open-all-panel').click(function () {
 });
 
 // play video on click
-jQuery( document ).ready(function($) {
-  $('.tab-video').click(function() {
-      this.paused ? this.play() : this.pause();
+jQuery(document).ready(function ($) {
+  $('.tab-video').click(function () {
+    this.paused ? this.play() : this.pause();
   });
 });
 
@@ -49,28 +49,43 @@ jQuery( document ).ready(function($) {
 
 const duplicateContainer = document.querySelectorAll('.duplicate-form-container')
 
-duplicateContainer.forEach(function(elem){
+duplicateContainer.forEach(function (elem) {
   const editContainer = elem.querySelector('.edit-container')
   const editCurrent = elem.querySelector('.edit-current')
   const editValue = elem.querySelector('.edit-value')
   const saveValue = elem.querySelector('.save-value')
   const updatedValue = elem.querySelector('.updated-value')
 
-  $(editCurrent).click(function() {
+  $(editCurrent).click(function () {
     $(editValue).addClass('active');
     $(saveValue).addClass('active');
     $(updatedValue).addClass('d-none')
-    $(editContainer).css('height', $(editValue).height() +'px');
+    $(editContainer).css('height', $(editValue).height() + 'px');
+    $('#questions .edit-current').addClass('d-none')
   })
-  
-  $(saveValue).click(function() {
+
+  $(saveValue).click(function () {
     $(editValue).removeClass('active');
     $(saveValue).removeClass('active');
     $(updatedValue).removeClass('d-none')
     $(editContainer).css('height', 'auto');
+    $('#questions .edit-current').removeClass('d-none')
   })
 })
 const confirmDeleteImg = document.getElementById('confirm-delete-img')
-$(confirmDeleteImg).click(function() {
+$(confirmDeleteImg).click(function () {
   $('.form__files-container li').hide()
 })
+const jobsNav = document.querySelectorAll('.create-job-tab-header')
+jobsNav.forEach(function (ele) {
+
+})
+
+function changeToSave() {
+  const questionNav = document.getElementById('questions-tab')
+  const nextBtn = document.getElementById('next-btn')
+  if (questionNav.classList.contains('active')) {
+    nextBtn.textContent = 'Save'
+  }
+}
+changeToSave();

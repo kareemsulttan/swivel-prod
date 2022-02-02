@@ -125,7 +125,7 @@ Date            :  15/01/2022
   border-radius: 1rem;
 }
 .radius12 {
-  border-radius: var(--px12);
+  border-radius: var(--px12) !important;
 }
 .radius8 {
   border-radius: 8px;
@@ -337,7 +337,14 @@ input[type=number] {
   top: 50%;
   transform: translate(10px, -50%);
 }
-
+.with-left-bottom-arrow::before {
+  content: url(../assets/icons/bottom-sm-arrow.svg);
+  vertical-align: middle;
+  line-height: 0;
+  margin-right: 5px;
+  height: 6px;
+  display: inline-block;
+}
 
 
 
@@ -380,7 +387,29 @@ input[type=number] {
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
   background-image: url(../assets/icons/radio-checked.svg);
 }
-
+.square-radio .custom-control-label::before {
+  border-radius: .375rem;
+}
+.square-radio .custom-control-input:checked~.custom-control-label::after {
+  background-image: url(../assets/icons/square-radio-checked.svg);
+}
+.custom-control.square-radio {
+  max-height: 1.4rem;
+  min-height: auto;
+}
+.square-radio .custom-control-label {
+  line-height: 1.25rem;
+}
+.square-radio .custom-control-label::after, .square-radio .custom-control-label::before {
+  top: 1px;
+}
+.options-radio {
+  max-width: 120px;
+}
+.options-radio .form-control {
+  padding-right: var(--px12)!important;
+  padding-left: var(--px12)!important;
+}
 /*inner search*/
 
 .inner-search-btn input[type="search"] {
@@ -891,7 +920,6 @@ body {
 .duplicate-form-container .with-arrows .input-group-append {
   top: 50%;
 }
-
 .edit-container {
   overflow: hidden;
   position: relative;

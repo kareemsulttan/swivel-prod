@@ -2610,20 +2610,20 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--primary);
   border-color: var(--primary);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--primary);
   border-color: var(--primary);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  color: var(--white);
+  color: var(--black);
   background-color: var(--primary);
   border-color: var(--primary);
 }
