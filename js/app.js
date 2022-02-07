@@ -45,6 +45,8 @@ jQuery(document).ready(function ($) {
   });
 });
 
+/* $('#chat').modal('show') */
+
 // duplicate page
 
 const duplicateContainer = document.querySelectorAll('.duplicate-form-container')
@@ -86,6 +88,7 @@ function changeToSave() {
   const nextBtn = document.getElementById('next-btn')
   if (questionNav.classList.contains('active')) {
     nextBtn.textContent = 'Save'
+    nextBtn.classList.remove('disabled')
   }
 }
 changeToSave();
