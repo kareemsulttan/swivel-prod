@@ -163,7 +163,7 @@
                 <ul class="list-unstyled flex-center-vh mb-0">
                   <li><a class="fw600 mr30 text-black text-decoration-none" data-toggle="modal" data-target="#close-job" href="#close-job">Close</a> </li>
                   <li><a class="fw600 mr30 text-black text-decoration-none" href="duplicate-job.html">Duplicate</a></li>
-                  <li><a class="btn btn-primary fw66 fs15" href="edit-job.html">Edit</a></li>
+                  <li><a class="btn btn-primary fw66 fs15" href="#">Edit</a></li>
                 </ul>
               </div>
             </div>
@@ -353,6 +353,7 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </section>
           </aside>
@@ -365,7 +366,8 @@
 
               <!-- video tabs -->
 
-              <div class="video-tabs-container flex-center-vh flex-column justify-content-between pb-4 pt-2 px-4">
+              <!-- Add class video-placeholder-tab when no videos to display -->
+              <div class="video-tabs-container flex-center-vh flex-column video-placeholder-tab justify-content-between pb-4 pt-2 px-4">
 
 
                 <!-- videos tab list -->
@@ -387,9 +389,9 @@
                 </div>
 
                 <!-- video tab content -->
+
                 <div class="tab-content">
-                  <div class="tab-pane h-100 fade show active" id="about-job-video" role="tabpanel"
-                    aria-labelledby="about-job-tab">
+                  <div class="tab-pane h-100 fade show active" id="about-job-video" role="tabpanel" aria-labelledby="about-job-tab">
 
                     <!-- video progress -->
 
@@ -401,10 +403,16 @@
                       </div>
                     </div>
                     <div class="video-container h-100">
+                      <!-- This element for video placeholder -->
+                      <div class="video-placeholder flex-center-vh">
+                        <img src="assets/icons/video-placeholder.png" alt="video-placeholder">
+                      </div>
+                      <!--
                       <video class="tab-video">
                         <source src="video/candidate.mp4" type="video/mp4" alt="candidate">
                         Your browser does not support HTML video.
                       </video>
+                      -->
                     </div>
                   </div>
                   <div class="tab-pane h-100 fade" id="responsibilities-video" role="tabpanel"

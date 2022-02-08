@@ -15,7 +15,44 @@
 </head>
 
 <body>
-
+  <!-- new job Modal -->
+  <div class="modal fade modal-top" id="new-job" tabindex="-1" role="dialog" aria-labelledby="new-job-Label"
+    aria-hidden="true">
+    <div class="modal-dialog with-shadow" role="document">
+      <div class="modal-content radius12 p30 pt12">
+        <div class="modal-header border-0 pb-0 pt-2 pb-3 px-0">
+          <h5 class="modal-title fw600 fs17" id="new-job-Label">Create a new job!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt="close-dark"></span>
+          </button>
+        </div>
+        <div class="modal-body pb20 px-0 pt-3 border-0">
+          <div class="mb-3">
+              <a href="create-job.html" class="flex-center-vh text-black py-3 px20 radius12 new-job-container justify-content-between border border-color-light-gray">
+                <div>
+                  <h3 class="fs15">Create a new job</h3>
+                  <span class="text-secondary">Fill in the information about new job</span>
+                </div>
+                <div>
+                  <img src="assets/icons/add.svg" alt="add">
+                </div>
+              </a>            
+          </div>
+          <div class="mb-0">
+            <a href="duplicate-job.html" class="flex-center-vh text-black py-3 px20 radius12 new-job-container justify-content-between border border-color-light-gray">
+              <div>
+                <h3 class="fs15">Duplicate existing job</h3>
+                <span class="text-secondary">Select the job from the list and copy it</span>
+              </div>
+              <div>
+                <img src="assets/icons/add.svg" alt="add">
+              </div>
+            </a>            
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- header -->
   <header>
     <!-- nav -->
@@ -40,7 +77,7 @@
           </li>
         </ul>
         <div class="flex-center-vh">
-          <a href="#" class="btn btn-primary mr30">New Job</a>
+          <button class="btn btn-primary mr30" data-target="#new-job" data-toggle="modal">New job</button>
           <div class="avatar avatar-sm avatar-circle">
             <img src="assets/avatar-border.svg" alt="avatar">
             <img class="avatar-img" src="assets/avatar.png" alt="avatar">

@@ -171,6 +171,9 @@ Date            :  15/01/2022
 .border-color-cyan {
   border-color: var(--cyan) !important;
 }
+.border-color-light-gray {
+  border-color: #CCCCCC !important;
+}
 .badge {
   font-weight: 500;
   padding-top: 0;
@@ -754,6 +757,9 @@ body {
 .with-shadow-lg {
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
 }
+.with-shadow-md {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+}
 .candidate-card:hover {
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 }
@@ -765,7 +771,9 @@ body {
   width: 100%;
   border-radius: var(--px12);
 }
-
+.exp-years {
+  max-width: 140px;
+}
 
 /* TOP_ITEM */
 
@@ -789,6 +797,9 @@ body {
 
 .bottom-item {
   padding-top: 14px;
+}
+.location-container {
+  max-width: 160px;
 }
 .location-container h3 {
   margin-bottom: 0;
@@ -1012,6 +1023,38 @@ body {
   border-right-style: solid;
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
 }
+
+/*VIDEO PLACEHOLDER*/
+
+.video-placeholder-tab .video-placeholder {
+  background-color: #F5F5F5;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.21);
+  height: 100%;
+  border-radius: var(--px20);
+  position: relative;
+  z-index: 3;
+}
+.video-placeholder-tab .video-container {
+  opacity: initial;
+}
+.video-placeholder-tab .video-nav-list, .video-placeholder-tab .video-progress {
+  z-index: 4;
+}
+.video-placeholder-tab .video-nav-list .nav-tabs .nav-link,
+.video-placeholder-tab .candidate-video-details * {
+  color: var(--black)!important;
+}
+.video-placeholder-tab .video-nav-list .nav-tabs .nav-link.active {
+  font-weight: 700;
+}
+.video-progress .progress {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.video-placeholder-tab .candidate-video-details,
+.video-placeholder-tab .video-nav,
+.video-placeholder-tab .chat-btn-container {
+  z-index: 5;
+}
 .qeustion-answer *,.reviewes-details * {
   line-height: 21px;
 }
@@ -1117,6 +1160,14 @@ body {
   border-bottom: none!important;
   padding-bottom: 0!important;
 }
+
+/*CREATE NEW JOB MODAL*/
+
+.new-job-container:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+  text-decoration: none!important;
+}
+
 
 /*DUPLICATE JOB*/
 
