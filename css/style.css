@@ -1232,11 +1232,12 @@ body {
   position: relative;
   background: var(--white);
 }
-.save-value,.edit-current {
+.save-value,.edit-current,.delete-pointer {
   cursor: pointer;
 }
 .save-value,.edit-value {
   visibility: hidden;
+  display: none;
   opacity:0;
   transition:visibility .2s ease-in-out, opacity .2s linear;
 }
@@ -1250,6 +1251,7 @@ body {
   visibility: visible;
   z-index: 2;
   opacity:1;
+  display: inline-block;
 }
 .edit-container.with-texterea textarea {
   min-height: 92px;

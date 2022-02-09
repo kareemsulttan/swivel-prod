@@ -45,7 +45,6 @@ jQuery(document).ready(function ($) {
   });
 });
 
-/* $('#chat').modal('show') */
 
 // duplicate page
 
@@ -57,11 +56,14 @@ duplicateContainer.forEach(function (elem) {
   const editValue = elem.querySelector('.edit-value')
   const saveValue = elem.querySelector('.save-value')
   const updatedValue = elem.querySelector('.updated-value')
+  const deleteCurrent = elem.querySelector('.delete-current')
 
   $(editCurrent).click(function () {
+    $(this).addClass('d-none');
     $(editValue).addClass('active');
     $(saveValue).addClass('active');
     $(updatedValue).addClass('d-none')
+    $(deleteCurrent).addClass('float-right ml-3')
     $(editContainer).css('height', $(editValue).height() + 'px');
     $('#questions .edit-current').addClass('d-none')
   })
@@ -70,7 +72,9 @@ duplicateContainer.forEach(function (elem) {
     $(editValue).removeClass('active');
     $(saveValue).removeClass('active');
     $(updatedValue).removeClass('d-none')
+    $(editCurrent).removeClass('d-none')
     $(editContainer).css('height', 'auto');
+    $(deleteCurrent).removeClass('float-right ml-3')
     $('#questions .edit-current').removeClass('d-none')
   })
 })
