@@ -45,6 +45,13 @@ jQuery(document).ready(function ($) {
   });
 });
 
+const shrinkBtn = document.getElementById('shrink-btn');
+
+shrinkBtn.addEventListener('click', function() {
+  $('.chat-right-side').toggleClass('active')
+  $('.chat-left-side').toggleClass('chat-left-side-space')
+  $('.expand-toggle').toggleClass('d-none')
+})
 
 // duplicate page
 
@@ -96,3 +103,4 @@ function changeToSave() {
   }
 }
 changeToSave();
+
