@@ -17,6 +17,45 @@ $('.btn-plus, .btn-minus').on('click', function (e) {
   }
 })
 
+// show password
+const passInput = document.querySelectorAll('.with-show-hide-pass');
+
+function showPass() {
+  passInput.forEach((x) => {
+    if (x.type === "password") {
+      x.type = "text";
+      $('.right-btn-icon').css('opacity', 'initial')
+    } else {
+      x.type = "password";
+      $('.right-btn-icon').css('opacity', '.5')
+    }
+  })
+};
+
+/* Start SMS Code input logic */
+
+const fieldset = document.querySelector(".validation");
+const fields = document.querySelectorAll(".validation .form-control");
+
+function handleInputField({ target }) {
+  const value = target.value.slice(0, 1);
+  target.value = value;
+
+  const step = value ? 1 : -1;
+  const fieldIndex = [...fields].findIndex((field) => field === target);
+  const focusToIndex = fieldIndex + step;
+
+  if (focusToIndex < 0 || focusToIndex >= fields.length) return;
+
+  fields[focusToIndex].focus();
+
+}
+fields.forEach((field) => {
+  field.addEventListener("input", handleInputField);
+});
+
+/* End SMS Code input logic */
+
 // add class and remove from others
 $('.select-one li').click(function () {
   $(this).addClass('active').siblings().removeClass('active');

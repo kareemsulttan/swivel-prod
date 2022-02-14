@@ -180,6 +180,9 @@ Date            :  15/01/2022
 .border-color-light-gray {
   border-color: #CCCCCC !important;
 }
+.text-underline {
+  text-decoration: underline !important;
+}
 .badge {
   font-weight: 500;
   padding-top: 0;
@@ -331,6 +334,13 @@ Date            :  15/01/2022
   padding-top: .5625rem;
   padding-bottom: .5625rem;
 }
+.right-btn-icon {
+  top: 50%;
+  right: 0;
+  transform: translate(-16px, -50%);
+  cursor: pointer;
+  opacity: .5;
+}
 
 /*inputs*/
 
@@ -395,6 +405,9 @@ input[type=number] {
 }
 .fixed-text input {
   padding-left: 3rem !important;
+}
+.fixed-text-lg input {
+  padding-left: 6.5rem !important;
 }
 .fixed-text-left {
   top: 50%;
@@ -510,6 +523,12 @@ input[type=number] {
 }
 .square-radio .custom-control-input:checked~.custom-control-label::after {
   background-image: url(../assets/icons/square-radio-checked.svg);
+}
+.square-radio.solid-radio-bg .custom-control-input:checked~.custom-control-label::after {
+  background-image: url(../assets/icons/gray-checked.svg);
+}
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: var(--black);
 }
 .custom-control.square-radio {
   max-height: 1.4rem;
@@ -838,6 +857,9 @@ body {
 }
 .with-shadow-md {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+}
+.with-shadow-sm {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.03);
 }
 .candidate-card:hover {
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
@@ -1225,7 +1247,8 @@ body {
   padding-right: var(--px20) !important;
 }
 .msg-input input,
-.candidate-search {
+.candidate-search,
+.login-form-container {
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.06);
 }
 .msg-btn {
@@ -1395,6 +1418,18 @@ body {
   border-width: 4px!important;
   border-color: #D9DFF2!important;
 }
+
+/*LOGIN*/
+
+.login-form-container {
+  max-width: 510px;
+}
+.link-left-icon {
+  left: 0;
+  top: 50%;
+  transform: translate(20px, -50%);
+}
+
 /*FOOTER*/
 
 footer {

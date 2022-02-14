@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sign up</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.svg" alt="logo">
+      </a>
+    </nav> <!-- end nav -->
+  </header> <!-- end header -->
+
+  <!-- main -->
+  <main class="flex-grow-1">
+    <div class="container-fluid h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="login-form-container bg-white col radius12 p-4">
+          <form action="">
+            <div class="main-title mb-4">
+              <h2 class="fs20 fw600 mb-2">Welcome to Swivel 👋</h2>
+              <span class="fs15">Create an account or <a class="text-black text-underline" href="login.html">Log in</a></span>
+            </div>
+            <div class="form-group mb12">
+              <input type="email" class="form-control" id="email" placeholder="Email address">
+            </div>
+            <div class="form-group mb-3 position-relative">
+              <input type="password" class="form-control with-show-hide-pass" id="password" placeholder="Password">
+              <div class="input-group-append position-absolute right-btn-icon">
+                <span class="show-hide-pass-btn" id="show-pass" onclick="showPass()"><img src="assets/icons/eye.svg" alt="eye"></span>
+              </div>
+            </div>
+            <div class="mb12 pb20">
+              <div class="custom-control custom-radio square-radio solid-radio-bg">
+                <input type="checkbox" class="custom-control-input" id="privacy" name="privacy" checked>
+                <label class="custom-control-label" for="privacy">
+                  <span class="ml12">I accept <a class="text-black text-underline" href="#">Privacy policy</a> and <a class="text-black text-underline" href="#">Terms of use</a> </span>
+                </label>
+              </div>
+            </div>
+            <div class="mb-4">
+              <a href="signup-confirm-email.html" class="btn btn-primary w-100 radius8 text-black">Create Account</a>
+            </div>
+            <div class="flex-center-vh text-with-line position-relative fs12 mb30">
+              <span class="cross-line w-100 position-absolute"></span>
+              <div class="bg-white px-3 position-relative">OR</div>
+            </div>
+            <div class="login-links mb-4">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a class="btn border w-100 mb12 border border-color-light-gray fw400 with-shadow-sm position-relative"
+                    href="#">
+                    <span class="position-absolute link-left-icon">
+                      <img src="assets/icons/apple.svg" alt="apple">
+                    </span>
+                    Continue with <span class="fw600">Apple</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="btn border w-100 mb12 border border-color-light-gray fw400 with-shadow-sm position-relative"
+                    href="#">
+                    <span class="position-absolute link-left-icon">
+                      <img src="assets/icons/facebook.svg" alt="facebook">
+                    </span>
+                    Continue with <span class="fw600">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="btn border w-100 mb12 border border-color-light-gray fw400 with-shadow-sm position-relative"
+                    href="#">
+                    <span class="position-absolute link-left-icon">
+                      <img src="assets/icons/google.svg" alt="google">
+                    </span>
+                    Continue with <span class="fw600">Google</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="text-center">
+              <a class="text-black fs15 text-underline" href="forgot-password.html">Forget password</a>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="flex-center-vh justify-content-between px30 py12 fs12 fw400">
+    <div>
+      <p class="m-0 text-info">©2021 swivel</p>
+    </div>
+    <div>
+      <a class="text-info mr-4" href="#">terms & conditions</a>
+      <a class="text-info" href="#">privacy policy</a>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
