@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>job details</title>
+  <title>Company details</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,28 +54,6 @@
   </div>
   </div>
 
-  <!-- close job Modal -->
-  <div class="modal fade modal-top" id="close-job" tabindex="-1" role="dialog" aria-labelledby="close-job-Label"
-    aria-hidden="true">
-    <div class="modal-dialog with-shadow" role="document">
-      <div class="modal-content radius12 p30 pt12">
-        <div class="modal-header border-0 pb-0 py-2 px-0">
-          <h5 class="modal-title fw600 fs17" id="close-job-Label">Are you sure you want to close this job?</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt=""></span>
-          </button>
-        </div>
-        <div class="modal-body pb20 px-0 pt-2 border-0">
-          Closed jobs stop receiving applications and can not be re-opened
-        </div>
-        <div class="modal-footer justify-content-between border-0 px-0 pb-0 pt20">
-          <button type="button" class="btn bg-transparent fs14 fw600 m-0 p-0" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-dark fs15 fw600 m-0" data-dismiss="modal">Yes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- header -->
   <header>
     <!-- nav -->
@@ -89,13 +67,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav m-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link link-line" href="job-details.html">My Jobs <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link link-line" href="chat.html">Chat</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link link-line" href="company-details.html">Company</a>
           </li>
         </ul>
@@ -123,20 +101,8 @@
             <div class="flex-center-vh justify-content-between">
               <div class="flex-center-vh justify-content-start title-container">
                 <div class="primary-title mb-0">
-                  <h2 class="mb-0 fw600 fs20 text-black"><a href="#" class="with-back-arrow"></a>Car Driver</h2>
+                  <h2 class="mb-0 fw600 fs20 text-black">Company</h2>
                 </div>
-                <div class="flex-center-vh">
-                  <h3 class="fs14 mb-0 total-item mr30">Candidates <span class="fw500 fs12 total">27</span></h3>
-                  <h3 class="mb-0 fs14 mb-0 total-item"><a class="fw600 text-black text-decoration-none" href="#">Job
-                      Details</a></h3>
-                </div>
-              </div>
-              <div class="input-group search-group">
-                <div class="input-group-prepend">
-                  <button class="btn py-0 px-2" type="button"><img src="assets/icons/search.svg" alt="search"></button>
-                </div>
-                <input type="search" class="form-control" placeholder="Search for job listings" aria-label=""
-                  aria-describedby="basic-addon1">
               </div>
             </div>
           </div>
@@ -161,9 +127,7 @@
               </div>
               <div class="header-nav">
                 <ul class="list-unstyled flex-center-vh mb-0">
-                  <li><a class="fw600 mr30 text-black text-decoration-none" data-toggle="modal" data-target="#close-job" href="#close-job">Close</a> </li>
-                  <li><a class="fw600 mr30 text-black text-decoration-none" href="duplicate-job.html">Duplicate</a></li>
-                  <li><a class="btn btn-primary fw66 fs15" href="edit-job.html">Edit</a></li>
+                  <li><a class="btn btn-primary fw66 fs15" href="edit-company.html">Edit</a></li>
                 </ul>
               </div>
             </div>
@@ -172,13 +136,12 @@
 
             <section class="left-side-body">
               <article class="py20 border-bottom">
-                <h4 class="fs14">🎥 This job is video compulsory</h4>
-                <p class="mb-0">Experienced barista with a strong background in marketing, communications and psychology
-                </p>
+                <p class="mb-0">Experienced barista with a strong background in marketing, communications 
+                  and psychology</p>
               </article>
               <div class="row m-0 py20">
-                <div class="col-md-6 px-0">
-                  <div class="flex-center-vh justify-content-start py12 pt-0">
+                <div class="col-md-12 px-0">
+                  <div class="flex-center-vh justify-content-start pb20">
                     <div class="mr-2 img-container img-container-md">
                       <img src="assets/icons/location.svg" alt="location">
                     </div>
@@ -186,172 +149,68 @@
                       <h3 class="fw500 fs13 lh12 mb-0">Soho, London</h3>
                     </div>
                   </div>
-                  <div class="flex-center-vh justify-content-start py12 pb-0">
+                  <div class="flex-center-vh justify-content-start pb20">
                     <div class="mr-2 img-container img-container-md">
-                      <img src="assets/icons/clock.svg" alt="clock">
+                      <img src="assets/icons/food-delivery.svg" alt="food-delivery">
                     </div>
                     <div class="location-container">
-                      <h3 class="fw500 fs13 lh12">Part-time</h3>
-                      <h4 class="fs12 text-secondary mb-0 lh12">Mon,Wen,Fri 9 am - 5 pm</h4>
+                      <h3 class="fw500 fs13 lh12">Food delivery</h3>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 px-0">
-                  <div class="flex-center-vh justify-content-start py12 pt-0">
+                <div class="col-md-12 px-0">
+                  <div class="flex-center-vh justify-content-start pb20">
                     <div class="mr-2 img-container img-container-md">
                       <img src="assets/icons/hr-rate.svg" alt="hr-rate">
                     </div>
                     <div class="location-container">
-                      <h3 class="fw500 fs13 lh12 mb-0">£10-12/hr</h3>
-                    </div>
-                  </div>
-                  <div class="flex-center-vh justify-content-start py12 pb-0">
-                    <div class="mr-2 img-container img-container-md">
-                      <img src="assets/icons/start-date.svg" alt="start-date">
-                    </div>
-                    <div class="location-container">
-                      <h3 class="fw500 fs13 lh12">12 October 2021</h3>
-                      <h4 class="fs12 text-secondary mb-0 lh12">Start date</h4>
+                      <h3 class="fw500 fs13 lh12 mb-0">100 employers</h3>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="job-details-cards">
-                <h2 class="fw600 fs17 mb-0 py20 pb-3">Job description</h2>
-
+                <h2 class="fw600 fs17 mb-0 py20 pb-3">About</h2>
                 <div class="job-detail-card radius16 bg-white p-3 with-shadow mb-3">
-                  <div class="flex-center-vh justify-content-start pb-4">
+                  <div class="flex-center-vh justify-content-start pb-4 mb-2">
                     <div class="mr-2 img-container img-container-lg">
-                      <img src="assets/icons/responsibilities.svg" alt="responsibilities">
+                      <img src="assets/icons/applied.png" alt="applied">
                     </div>
                     <div class="location-container">
-                      <h3 class="fw500 fs15 lh12 mb-0">Responsibilities</h3>
+                      <h3 class="fw500 fs15 lh12 mb-0">Uber Eats</h3>
                     </div>
                   </div>
-                  <div class="row m-0">
-                    <div class="col-md-6 p-0">
-                      <ul class="list-unstyled mb-0">
-                        <li class="with-dots">Food delivery</li>
-                        <li class="with-dots">Packaging food</li>
-                        <li class="with-dots">Food delivery</li>
-                        <li class="with-dots">Packaging food</li>
-                      </ul>
+                  <div class="company-desc pb20">
+                    <div class="col-7 mb-3 p-0">
+                      <h2 class="fs14 mb-1">Order food to your door.</h2>
+                      <span class="text-secondary fs13">Food delivery</span>                     
                     </div>
-                    <div class="col-md-6 p-0">
-                      <ul class="list-unstyled mb-0">
-                        <li class="with-dots">Food delivery</li>
-                        <li class="with-dots">Packaging food</li>
-                        <li class="with-dots">Food delivery</li>
-                        <li class="with-dots">Packaging food</li>
-                      </ul>
+                    <div class="col-11 p-0">
+                      <p class="mb-0">Some description about the company some text about the company some text about the company</p>                       
                     </div>
+                  </div>
+                  <div class="social-links">
+                    <ul class="list-unstyled d-flex">
+                      <li><a href="#" class="mr12"><img src="assets/icons/instagram.svg" alt="instagram"></a></li>
+                      <li><a href="#" class="mr12"><img src="assets/icons/facebook2.svg" alt="facebook2"></a></li>
+                      <li><a href="#" class="mr12"><img src="assets/icons/youtube.svg" alt="youtube"></a></li>
+                      <li><a href="#"><img src="assets/icons/tiktok.svg" alt="tiktok"></a></li>
+                    </ul>
                   </div>
                 </div>
-
-                <div class="job-detail-card radius16 bg-white p-3 with-shadow mb-3">
-                  <div class="flex-center-vh justify-content-start pb-4">
-                    <div class="mr-2 img-container img-container-lg">
-                      <img src="assets/icons/benefits.svg" alt="benefits">
+              </div>
+              <div class="job-details-cards">
+                <h2 class="fw600 fs17 mb-0 py20 pb-3">Location</h2>
+                <div class="job-detail-card radius16 bg-white p-0 with-shadow mb-3 overflow-hidden">
+                  <div style="width: 100%"><iframe width="100%" height="200" frameborder="0" scrolling="no"
+                    marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=260&amp;hl=en&amp;q=Manchester+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                      href="https://www.gps.ie/sport-gps/">gps watches</a></iframe>
                     </div>
-                    <div class="location-container">
-                      <h3 class="fw500 fs15 lh12 mb-0">Benefits</h3>
+                    <div class="p20 flex-center-vh justify-content-between">
+                      <div><span>Mrs Smith 71 Cherry Court SOUTHAMPTON SO53 5PD UK</span></div>
+                      <div><span class="fs13 text-secondary">1.1 km</span></div>
                     </div>
-                  </div>
-                  <div class="row m-0">
-                    <div class="col p-0">
-                      <ul class="list-unstyled mb-0">
-                        <li class="with-dots">Social package, medical insurance</li>
-                        <li class="with-dots">Payed sick lists and regular vacations</li>
-                        <li class="with-dots">Flexible work hours</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="job-detail-card radius16 bg-white p-3 with-shadow mb-3">
-                  <div class="flex-center-vh justify-content-start pb-4">
-                    <div class="mr-2 img-container img-container-lg">
-                      <img src="assets/icons/requirements.svg" alt="requirements">
-                    </div>
-                    <div class="location-container">
-                      <h3 class="fw500 fs15 lh12 mb-0">Requirements</h3>
-                    </div>
-                  </div>
-                  <div class="row m-0">
-                    <div class="col-md-6 p-0">
-                      <ul class="list-unstyled mb-0">
-                        <li class="with-dots">High school diploma</li>
-                        <li class="with-dots">Experience in customer service</li>
-                        <li class="with-dots">Experience in customer service</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6 p-0">
-                      <ul class="list-unstyled mb-0">
-                        <li class="with-dots">High school diploma</li>
-                        <li class="with-dots">Experience in customer service</li>
-                        <li class="with-dots">Experience in customer service</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="job-detail-card radius16 bg-white p-3 with-shadow mb-3">
-                  <div class="flex-center-vh justify-content-start pb-4">
-                    <div class="mr-2 img-container img-container-lg">
-                      <img src="assets/icons/schedule.svg" alt="schedule">
-                    </div>
-                    <div class="location-container">
-                      <h3 class="fw500 fs15 lh12 mb-0">Job Schedule</h3>
-                    </div>
-                  </div>
-                  <div class="badges-container py20 pt-0">
-                    <div class="secondary-title">
-                      <h2 class="fs13 fw600">Days</h2>
-                    </div>
-                    <div class="row m-0 ">
-                      <div class="col p-0">
-                        <ul class="list-unstyled mb-0 flex-center-vh justify-content-start">
-                          <li><span class="badge badge-magnolia badge-lg lh40 fs13 mr12">Mon</span></li>
-                          <li><span class="badge badge-magnolia badge-lg lh40 fs13 mr12">Wen</span></li>
-                          <li><span class="badge badge-magnolia badge-lg lh40 fs13">Fri</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="badges-container">
-                    <div class="secondary-title">
-                      <h2 class="fs13 fw600">Time of the day</h2>
-                    </div>
-                    <div class="row m-0">
-                      <div class="col p-0">
-                        <ul class="list-unstyled mb-0 flex-center-vh justify-content-start">
-                          <li><span class="badge badge-magnolia badge-lg lh40 fs13 mr12">Morning</span></li>
-                          <li><span class="badge badge-magnolia badge-lg lh40 fs13 mr12">Afternoon</span></li>
-                          <li><span class="badge badge-magnolia badge-lg lh40 fs13">9 am - 5 pm</span></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="job-detail-card radius16 bg-white p-3 with-shadow">
-                  <div class="flex-center-vh justify-content-start pb-4">
-                    <div class="mr-2 img-container img-container-lg">
-                      <img src="assets/icons/screening.svg" alt="screening">
-                    </div>
-                    <div class="location-container">
-                      <h3 class="fw500 fs15 lh12 mb-0">Screening Questions</h3>
-                    </div>
-                  </div>
-                  <div class="row m-0">
-                    <div class="col p-0">
-                      <ul class="list-unstyled mb-0">
-                        <li class="with-dots">Are you 18 years old?</li>
-                        <li class="with-dots">Do you already have the legal right to work in the UK?</li>
-                        <li class="with-dots">Are you willing to handle alcohol & non-halal meat?</li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
               </div>
             </section>
@@ -373,15 +232,15 @@
                   <ul class="list-group nav nav-item-list nav-tabs text-right position-relative" role="tablist">
                     <li class="nav-item">
                       <a class="nav-link active" id="about-job" data-toggle="tab" href="#about-job-video" role="tab"
-                        aria-controls="about-job-video" aria-selected="true">About Job 👋</a>
+                        aria-controls="about-job-video" aria-selected="true">About Company👋</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" id="responsibilities" data-toggle="tab" href="#responsibilities-video"
-                        role="tab" aria-controls="responsibilities-video" aria-selected="false">Responsibilities ⚡️</a>
+                        role="tab" aria-controls="responsibilities-video" aria-selected="false">Team 👥️</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" id="requirements" data-toggle="tab" href="#requirements-video" role="tab"
-                        aria-controls="requirements-video" aria-selected="false">Requirements 🔖</a>
+                        aria-controls="requirements-video" aria-selected="false">Our Jobs 💼</a>
                     </li>
                   </ul>
                 </div>
@@ -455,15 +314,6 @@
                     <div>
                       <h3 class="fw700 fs17 text-white">Bike courier</h3>
                       <h4 class="opacity-9 fs14 mb-0 text-white">Uber Eats</h4>
-                    </div>
-                  </div>
-                  <div class="d-flex flex-column">
-                    <div class="mb-1 text-right">
-                      <span class="badge badge-primary badge-sm fw700 fs10">PART TIME 🎥</span>
-                    </div>
-                    <div>
-                      <span class="text-white"> <img class="mr-2" src="assets/icons/location-white.svg"
-                          alt="location-white"> Soho, London</span>
                     </div>
                   </div>
                 </div>

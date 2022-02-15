@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Empty job Listings</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- new job Modal -->
+  <div class="modal fade modal-top" id="new-job" tabindex="-1" role="dialog" aria-labelledby="new-job-Label"
+    aria-hidden="true">
+    <div class="modal-dialog with-shadow" role="document">
+      <div class="modal-content radius12 p30 pt12">
+        <div class="modal-header border-0 pb-0 pt-2 pb-3 px-0">
+          <h5 class="modal-title fw600 fs17" id="new-job-Label">Create a new job!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt="close-dark"></span>
+          </button>
+        </div>
+        <div class="modal-body pb20 px-0 pt-3 border-0">
+          <div class="mb-3">
+              <a href="create-job.html" class="flex-center-vh text-black py-3 px20 radius12 new-job-container justify-content-between border border-color-light-gray">
+                <div>
+                  <h3 class="fs15">Create a new job</h3>
+                  <span class="text-secondary">Fill in the information about new job</span>
+                </div>
+                <div>
+                  <img src="assets/icons/add.svg" alt="add">
+                </div>
+              </a>            
+          </div>
+          <div class="mb-0">
+            <a href="duplicate-job.html" class="flex-center-vh text-black py-3 px20 radius12 new-job-container justify-content-between border border-color-light-gray">
+              <div>
+                <h3 class="fs15">Duplicate existing job</h3>
+                <span class="text-secondary">Select the job from the list and copy it</span>
+              </div>
+              <div>
+                <img src="assets/icons/add.svg" alt="add">
+              </div>
+            </a>            
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header -->
+  <header>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item active">
+            <a class="nav-link link-line" href="job-details.html">My Jobs <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-line" href="chat.html">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-line" href="company-details.html">Company</a>
+          </li>
+        </ul>
+        <div class="flex-center-vh">
+          <button class="btn btn-primary mr30" data-target="#new-job" data-toggle="modal">New job</button>
+          <div class="avatar avatar-sm avatar-circle">
+            <img src="assets/avatar-border.svg" alt="avatar">
+            <img class="avatar-img" src="assets/avatar.png" alt="avatar">
+          </div>
+        </div>
+      </div>
+    </nav> <!-- end nav -->
+  </header> <!-- end header -->
+
+  <!-- main -->
+  <main class="flex-grow-1 main-left-space">
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <aside class="col left-side col-side pt30">
+
+            <!-- left-side-header -->
+
+            <div class="left-side-header pb30">
+              <div class="flex-center-vh justify-content-between">
+                <div class="flex-center-vh justify-content-start title-container">
+                  <div class="primary-title">
+                    <h2 class="mb-0"><a href="#" class="fw600 fs20 text-black">Job Listings</a></h2>
+                  </div>
+                  <div class="flex-center-vh">
+                    <h3 class="fw600 fs14 mb-0 total-item mr30">Open Jobs<span class="fw500 fs12 total">0</span></h3>
+                    <h3 class="fw400 fs14 mb-0 total-item">Closed Jobs<span class="fw400 fs12 total">0</span></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- left-side-body -->
+            <div class="left-side-body">
+              <div class="container-fluid">
+                <div class="row flex-column align-items-center">
+                  <div class="col-12 p-0 mb-5">
+                    <div class="job-listings-placeholder text-center">
+                      <img src="assets/empty-job-listings.svg" alt="empty-job-listings">
+                    </div>                    
+                  </div>
+                  <div class="col-6 p-0 text-center">
+                    <div class="main-title mb30">
+                      <h2 class="fs17 fw600">Start by creating a new job</h2>
+                      <p class="fs15">Post a new job to start searching for candidates</p>
+                    </div>
+                    <div class="btn-container">
+                      <a href="create-job.html" class="btn btn-primary fs15 fw600">Create a job</a>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </aside>
+          <aside class="col right-side border-left col-side pt30 bg-white vh-100">
+
+            <!-- right-side-header -->
+            <div class="right-side-header pb-4 flex-center-vh justify-content-between">
+              <div>
+                <h2 class="fs17 fw700 m-0 lh30">Resume</h2>
+              </div>
+              <div>
+                <span class="dropdown selectbox-menu dropdown-with-arrow">
+                  <button class="btn p-0 dropdown-toggle" type="button" id="dropdown2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Last month
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-md dropdown-menu-right" aria-labelledby="dropdown2">
+                    <ul class="list-unstyled dropdown-links-list mb-0">
+                      <li><a class="dropdown-item" href="#!">Last day</a></li>
+                      <li><a class="dropdown-item" href="#!">Last week</a></li>
+                      <li><a class="dropdown-item" href="#!">Last month</a></li>
+                      <li><a class="dropdown-item" href="#!">Last 3 months</a></li>
+                    </ul>
+                  </div>
+                </span>
+              </div>
+            </div>
+
+            <!-- right side body -->
+            <div class="right-side-body">
+              <div class="flex-center-vh justify-content-between">
+                <div class="col info-card border p-3 mb-3">
+                  <div class="mb-3"><img src="assets/icons/total-job.png" alt="total-job"></div>
+                  <h3 class="fs17 fw600">0</h3>
+                  <h4 class="fw400 fs14">Total jobs</h4>
+                </div>
+                <div class="col info-card border p-3 mb-3">
+                  <div class="mb-3"><img src="assets/icons/applied.png" alt="applied"></div>
+                  <h3 class="fs17 fw600">0</h3>
+                  <h4 class="fw400 fs14">Total applied</h4>
+                </div>
+                <div class="col info-card border p-3 mb-3">
+                  <div class="mb-3"><img src="assets/icons/interviewed.png" alt="interviewed"></div>
+                  <h3 class="fs17 fw600">0</h3>
+                  <h4 class="fw400 fs14">Interviewed</h4>
+                </div>
+                <div class="col info-card border p-3 mb-3">
+                  <div class="mb-3"><img src="assets/icons/hired.png" alt="hired"></div>
+                  <h3 class="fs17 fw600">0</h3>
+                  <h4 class="fw400 fs14">Hired</h4>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main> <!-- end main -->
+
+  <!-- footer -->
+  <footer class="flex-center-vh justify-content-between px30 py12 fs12 fw400">
+    <div>
+      <p class="m-0 text-info">©2021 swivel</p>
+    </div>
+    <div>
+      <a class="text-info mr-4" href="#">terms & conditions</a>
+      <a class="text-info" href="#">privacy policy</a>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
