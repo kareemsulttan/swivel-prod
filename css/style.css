@@ -28,6 +28,7 @@ Date            :  15/01/2022
   --magnolia: #F7F5FD;
   --danger: #dc3545;
   --warning: #ffc107;
+  --danger: #DF3838;
   --teal: #E7EBF7;
   --px12: .75rem;
   --px14: .875rem;
@@ -421,10 +422,15 @@ input[type=number] {
   height: 6px;
   display: inline-block;
 }
-/*
- * bootstrap-tagsinput v0.8.0
- * 
- */
+.form-control.is-invalid {
+  border-color: var(--danger)
+}
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  background: none;
+  color: var(--danger);
+}
+/* bootstrap-tagsinput */
+
  .input-tags {
   padding: 5px var(--px12)!important;
   }
@@ -1430,6 +1436,24 @@ body {
   transform: translate(20px, -50%);
 }
 
+/*PRIVACY*/
+.privacy-nav {
+  max-width: 190px;
+}
+.privacy-content {
+  max-width: 605px;
+}
+.privacy-nav .link-line {
+  padding: 0 0 .2rem .4rem !important;
+  margin-bottom: var(--px12);
+}
+.privacy-nav .link-line::before {
+  width: 3px;
+  height: 1rem;
+  left: 0;
+  top: 2px;
+  transform: translate(0, 0);
+}
 /*FOOTER*/
 
 footer {
