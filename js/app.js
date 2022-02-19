@@ -84,14 +84,6 @@ jQuery(document).ready(function ($) {
   });
 });
 
-const shrinkBtn = document.getElementById('shrink-btn');
-
-shrinkBtn.addEventListener('click', function() {
-  $('.chat-right-side').toggleClass('active')
-  $('.chat-left-side').toggleClass('chat-left-side-space')
-  $('.expand-toggle').toggleClass('d-none')
-})
-
 // duplicate page
 
 const duplicateContainer = document.querySelectorAll('.duplicate-form-container')
@@ -133,6 +125,14 @@ jobsNav.forEach(function (ele) {
 
 })
 
+const shrinkBtn = document.getElementById('shrink-btn');
+
+shrinkBtn.addEventListener('click', function() {
+  $('.chat-right-side').toggleClass('active')
+  $('.chat-left-side').toggleClass('chat-left-side-space')
+  $('.expand-toggle').toggleClass('d-none')
+})
+
 function changeToSave() {
   const questionNav = document.getElementById('questions-tab')
   const nextBtn = document.getElementById('next-btn')
@@ -143,3 +143,6 @@ function changeToSave() {
 }
 changeToSave();
 
+$(".job-card").click(function(){
+  window.location=$(this).find("a").attr("href"); return false;
+});

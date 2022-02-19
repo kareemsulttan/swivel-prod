@@ -824,6 +824,8 @@ body {
   max-width: calc(100% - 386px);
 }
 
+/* EMPLOYER JOB LISTINGS */
+
 /* LEFT_SIDE_HEADER */
 
 .primary-title {
@@ -895,9 +897,20 @@ body {
   vertical-align: bottom;
   margin-right: 5px;
 }
-.published>* {
+.published > * {
   line-height: 20px;
   vertical-align: middle;
+}
+.job-listings-dropdown-container {
+  position: absolute;
+  right: 1rem;
+  top: .8rem;
+}
+.job-listings-dropdown-container .dropdown {
+  z-index: 1;
+}
+.job-listings-dropdown-container .dropdown.show {
+  z-index: 999;
 }
 
 /* BOTTOM_ITEM */

@@ -5,10 +5,11 @@
   <title>Duplicate Job</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
@@ -16,23 +17,42 @@
 
 <body class="bg-white create-job-page">
 
-  <!-- quit creating job Modal -->
-  <div class="modal fade modal-top" id="quit-creating-job" tabindex="-1" role="dialog" aria-labelledby="quit-creating-job-Label"
+    <!-- new job Modal -->
+    <div class="modal fade modal-top" id="new-job" tabindex="-1" role="dialog" aria-labelledby="new-job-Label"
     aria-hidden="true">
     <div class="modal-dialog with-shadow" role="document">
       <div class="modal-content radius12 p30 pt12">
-        <div class="modal-header border-0 pb-0 py-2 px-0">
-          <h5 class="modal-title fw600 fs17" id="quit-creating-job-Label">Do you want to quit?!</h5>
+        <div class="modal-header border-0 pb-0 pt-2 pb-3 px-0">
+          <h5 class="modal-title fw600 fs17" id="new-job-Label">Create a new job!</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt=""></span>
+            <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt="close-dark"></span>
           </button>
         </div>
-        <div class="modal-body pb20 px-0 pt-2 border-0">
-          Information about the job won’t be saved
-        </div>
-        <div class="modal-footer justify-content-between border-0 px-0 pb-0 pt20">
-          <button type="button" class="btn bg-transparent fs14 fw600 m-0 p-0" data-dismiss="modal">Keep working</button>
-          <button type="button" id="confirm-quit-creating-job" class="btn btn-dark fs15 fw600 m-0" data-dismiss="modal">Yes</button>
+        <div class="modal-body pb20 px-0 pt-3 border-0">
+          <div class="mb-3">
+            <a href="create-job.html"
+              class="flex-center-vh text-black py-3 px20 radius12 new-job-container justify-content-between border border-color-light-gray">
+              <div>
+                <h3 class="fs15">Create a new job</h3>
+                <span class="text-secondary">Fill in the information about new job</span>
+              </div>
+              <div>
+                <img src="assets/icons/add.svg" alt="add">
+              </div>
+            </a>
+          </div>
+          <div class="mb-0">
+            <a href="duplicate-job.html"
+              class="flex-center-vh text-black py-3 px20 radius12 new-job-container justify-content-between border border-color-light-gray">
+              <div>
+                <h3 class="fs15">Duplicate existing job</h3>
+                <span class="text-secondary">Select the job from the list and copy it</span>
+              </div>
+              <div>
+                <img src="assets/icons/add.svg" alt="add">
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -54,8 +74,7 @@
         </div>
         <div class="modal-footer justify-content-between border-0 px-0 pb-0 pt20">
           <button type="button" class="btn bg-transparent fs14 fw600 m-0 p-0" data-dismiss="modal">Back to Jobs</button>
-          <button type="button" id="confirm-save-job" class="btn btn-dark fs15 fw600 m-0" data-dismiss="modal">View Job
-            Page</button>
+          <a href="job-details.html" id="confirm-save-job" class="btn btn-dark fs15 fw600 m-0">View Job Page</a>
         </div>
       </div>
     </div>
@@ -139,17 +158,34 @@
   <!-- header -->
   <header>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg bg-white border-bottom justify-content-between">
-      <div>
-        <a class="navbar-brand" href="#">
-          <img src="assets/logo.svg" alt="logo">
-        </a>
-      </div>
-      <a class="btn btn-dark-gray btn-y-sm fw600 fs15 with-right-icon px-4" data-toggle="modal" data-target="#quit-creating-job" href="#quit-creating-job">
-        Quite
-        <img src="assets/icons/close.png" alt="close">
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.svg" alt="logo">
       </a>
-
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link link-line active" href="employer-job-listing.html">My Jobs <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-line" href="chat.html">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-line" href="company-details.html">Company</a>
+          </li>
+        </ul>
+        <div class="flex-center-vh">
+          <button class="btn btn-primary mr30" data-target="#new-job" data-toggle="modal">New job</button>
+          <div class="avatar avatar-sm avatar-circle">
+            <img src="assets/avatar-border.svg" alt="avatar">
+            <img class="avatar-img" src="assets/avatar.png" alt="avatar">
+          </div>
+        </div>
+      </div>
     </nav> <!-- end nav -->
   </header> <!-- end header -->
 
@@ -177,7 +213,7 @@
               <div class="create-job-tab create-job-tab-header">
                 <ul class="nav nav-tabs pb-2 border-bottom" id="create-job-list" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link link-line ml-0" id="job-description-tab" data-toggle="tab"
+                    <a class="nav-link link-line ml-0 active" id="job-description-tab" data-toggle="tab"
                       href="#job-description" role="tab" aria-controls="job-description" aria-selected="true">Job
                       description</a>
                   </li>
@@ -186,8 +222,8 @@
                       role="tab" aria-controls="job-location" aria-selected="false">Job location</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link link-line" id="job-type-salary-tab" data-toggle="tab"
-                      href="#job-type-salary" role="tab" aria-controls="job-type-salary" aria-selected="false">Job type
+                    <a class="nav-link link-line" id="job-type-salary-tab" data-toggle="tab" href="#job-type-salary"
+                      role="tab" aria-controls="job-type-salary" aria-selected="false">Job type
                       & salary</a>
                   </li>
                   <li class="nav-item" role="presentation">
@@ -195,8 +231,8 @@
                       aria-controls="videos" aria-selected="false">Videos</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link link-line active" id="questions-tab" data-toggle="tab" href="#job-questions" role="tab"
-                      aria-controls="job-questions" aria-selected="false">Questions </a>
+                    <a class="nav-link link-line" id="questions-tab" data-toggle="tab" href="#job-questions"
+                      role="tab" aria-controls="job-questions" aria-selected="false">Questions </a>
                   </li>
                 </ul>
               </div>
@@ -210,7 +246,7 @@
 
                 <!-- job-description-tab -->
 
-                <div class="tab-pane fade" id="job-description" role="tabpanel" aria-labelledby="job-description-tab">
+                <div class="tab-pane fade show active" id="job-description" role="tabpanel" aria-labelledby="job-description-tab">
                   <form>
                     <div class="d-flex pb20">
                       <div class="col pr-3 pl-0">
@@ -506,7 +542,8 @@
 
                             <!-- job-category-container -->
 
-                            <ul class="list-unstyled flex-center-vh mb-0 select-one job-category-container justify-content-start">
+                            <ul
+                              class="list-unstyled flex-center-vh mb-0 select-one job-category-container justify-content-start">
                               <li class="active"><span class="badge badge-light badge-lg lh40 fs14 tag mr12 mb12">🛵
                                   Delivery</span></li>
                               <li><span class="badge badge-light badge-lg lh40 fs14 tag mr12 mb12">🥐 Waiters</span>
@@ -620,7 +657,8 @@
 
                             <!-- Other preferences container -->
 
-                            <ul class="list-unstyled flex-center-vh mb-0 other-preferences-container select-multiple justify-content-start">
+                            <ul
+                              class="list-unstyled flex-center-vh mb-0 other-preferences-container select-multiple justify-content-start">
                               <li><span class="badge badge-light badge-xl lh40 fs12 tag mr12">Other preferences</span>
                               </li>
                               <li><span class="badge badge-light badge-xl lh40 fs12 tag mr12">No experience</span></li>
@@ -764,7 +802,7 @@
 
                 <!-- questions -->
 
-                <div class="tab-pane fade show active" id="job-questions" role="tabpanel"
+                <div class="tab-pane fade" id="job-questions" role="tabpanel"
                   aria-labelledby="questions-tab">
                   <form action="">
                     <div class="form-group border-bottom border-color-eb mb-0">
@@ -783,7 +821,8 @@
                             <div class="form-group my12">
                               <div class="flex-center-vh">
                                 <div class="col p-0 options-radio">
-                                  <div class="form-control no-top-right-radius no-bottom-right-radius border-right-0 px12">
+                                  <div
+                                    class="form-control no-top-right-radius no-bottom-right-radius border-right-0 px12">
                                     <div class="custom-control custom-radio square-radio">
                                       <input type="radio" class="custom-control-input" id="option1" name="option"
                                         checked>
@@ -1076,7 +1115,8 @@
       </a>
     </div>
     <div>
-      <a class="btn btn-primary with-right-icon" id="next-btn" data-toggle="modal" data-target="#save-job" href="#save-job">
+      <a class="btn btn-primary with-right-icon" id="next-btn" data-toggle="modal" data-target="#save-job"
+        href="#save-job">
         Next
         <img src="assets/icons/right-nav-arrow.svg" alt="right-nav-arrow">
       </a>
