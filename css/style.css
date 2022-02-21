@@ -1300,9 +1300,11 @@ body {
 
 /*CREATE NEW JOB MODAL*/
 
-.new-job-container:hover {
+.new-job-container:hover,
+.able-to-hire-container:hover {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
   text-decoration: none!important;
+  cursor: pointer;
 }
 
 
@@ -1467,6 +1469,29 @@ body {
   top: 2px;
   transform: translate(0, 0);
 }
+
+/*ABLE TO HIRE MODAL*/
+.able-to-hire-container, label {
+  cursor: pointer;
+}
+.able-to-hire-container .custom-radio .custom-control-input:checked~.custom-control-label::after,.able-to-hire-container .custom-radio .custom-control-input:checked~.custom-control-label::before,.able-to-hire-container .custom-control-label::after,.able-to-hire-container .custom-control-label::before,.able-to-hire-container .custom-control-input {
+ top: 50%;
+ transform: translate(0, -50%);
+}
+.able-to-hire-container label > span {
+  display: inline-block;
+  min-height: 55px;
+  line-height: 30px;
+}
+.able-to-hire-container .square-radio {
+  max-height: fit-content;
+}
+#other-reason-text.hidden-textarea {
+  height: 0;
+  margin-bottom: 0;
+}
+
+
 /*FOOTER*/
 
 footer {

@@ -84,6 +84,30 @@ jQuery(document).ready(function ($) {
   });
 });
 
+// change the next link if the reason (no) radio is checked
+const ableToHireForm = document.getElementById('able-to-hire-radio-form');
+const notAble = document.getElementById('not-able');
+const changeableNext = document.getElementById('conditional-next');
+ableToHireForm.addEventListener('click', function() {
+  if(notAble.checked) {
+    changeableNext.dataset.target = '#job-survey-step-2-2'
+  } else {
+    changeableNext.dataset.target = '#job-survey-step-1-2'
+  }
+})
+
+// open texterea if other reason selected
+const stepTow = document.getElementById('step-2-2-form')
+const reasonFour = document.getElementById('reason-4')
+const otherReason = document.getElementById('other-reason-text')
+stepTow.addEventListener('click', function() {
+  if(reasonFour.checked) {
+    otherReason.classList.remove('hidden-textarea')
+  } else {
+    otherReason.classList.add('hidden-textarea')
+  }
+})
+
 // duplicate page
 
 const duplicateContainer = document.querySelectorAll('.duplicate-form-container')
@@ -146,3 +170,4 @@ changeToSave();
 $(".job-card").click(function(){
   window.location=$(this).find("a").attr("href"); return false;
 });
+

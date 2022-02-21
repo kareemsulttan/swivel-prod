@@ -108,18 +108,163 @@
     <div class="modal-dialog modal-lg with-shadow" role="document">
       <div class="modal-content radius12 p30 pt12">
         <div class="modal-header border-0 pb-0 py-2 px-0">
-          <div><span class="fw600">1</span> | <span>2</span></div>
-          <h5 class="modal-title fw600 fs17" id="job-survey-step-1-Label">Were you able to hire with Swivel?</h5>
+          <div class="w-100 text-center"><span class="fw600">1</span><span style="color:#CCCCCC"> | </span><span class="text-secondary">2</span></div>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt="close-dark"></span>
           </button>
         </div>
         <div class="modal-body pb20 px-0 pt-2 border-0">
-          Complete a small survey to help us work better. It’s ok if you are not into doing this, you can skip it.
+          <div class="survey-title">
+            <h5 class="modal-title fw600 fs17" id="job-survey-step-1-Label">Were you able to hire with Swivel?</h5>
+            <span class="text-secondary">Choose 1 answer</span>            
+          </div>
+          <div class="survey-form mt-4">
+            <form action="" id="able-to-hire-radio-form">
+              <div class="radius12 border border-color-light-gray px12 mb-3 able-to-hire-container">
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="yes-able" name="able-to-hire" checked>
+                  <label class="custom-control-label col px-0" for="yes-able">
+                    <span class="pl12 py12">Yes</span>
+                  </label>
+                </div>                
+              </div>
+              <div class="radius12 border border-color-light-gray px12 able-to-hire-container">
+                <div class="custom-control custom-radio">
+                  <input type="radio" class="custom-control-input" id="not-able" name="able-to-hire">
+                  <label class="custom-control-label col px-0" for="not-able">
+                    <span class="pl12 py12">No</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
         <div class="modal-footer justify-content-between border-0 px-0 pb-0 pt20">
-          <button type="button" class="btn bg-transparent fs14 fw600 m-0 p-0" data-dismiss="modal">Skip survey</button>
-          <button type="button" class="btn btn-primary fs15 fw600 m-0" data-toggle="modal" data-target="#job-survey-step-2" data-dismiss="modal">Continue</button>
+          <button type="button" class="btn bg-transparent fs14 fw600 m-0 p-0" data-dismiss="modal" disabled>
+            <img class="mr-3" src="assets/icons/left-arrow.svg" alt="left-arrow">
+            Back
+          </button>
+          <div class="m-0">
+            <button class="btn bg-transparent fw600" data-dismiss="modal">Skip survey</button>  
+            <button type="button" class="btn btn-primary fs15 fw600 my-0 ml-0" id="conditional-next" data-toggle="modal" data-target="#job-survey-step-1-2" data-dismiss="modal">
+              Next
+              <img class="ml-3" src="assets/icons/right-nav-arrow.svg" alt="right-nav-arrow">
+            </button>        
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- job survey 1-2 Modal -->
+  <div class="modal fade modal-top" id="job-survey-step-1-2" tabindex="-1" role="dialog" aria-labelledby="job-survey-step-1-2-Label"
+  aria-hidden="true">
+    <div class="modal-dialog modal-lg with-shadow" role="document">
+      <div class="modal-content radius12 p30 pt12">
+        <div class="modal-header border-0 pb-0 py-2 px-0">
+          <div class="w-100 text-center"><span class="fw600">2</span><span style="color:#CCCCCC"> | </span><span class="text-secondary">2</span></div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt="close-dark"></span>
+          </button>
+        </div>
+        <div class="modal-body pb20 px-0 pt-2 border-0">
+          <div class="survey-title">
+            <h5 class="modal-title fw600 fs17" id="job-survey-step-1-2-Label">Great job! What is candidate name that is hired?</h5>
+            <span class="text-secondary">Type candidate name</span>            
+          </div>
+          <div class="survey-form mt-4">
+            <form action="">
+              <div class="form-group">
+                <input type="text" class="form-control" id="candidate-name" placeholder="Name">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between border-0 px-0 pb-0 pt20">
+          <button type="button" class="btn bg-transparent fs14 fw600 m-0 p-0" data-dismiss="modal" data-toggle="modal" data-target="#job-survey-step-1" >
+            <img class="mr-3" src="assets/icons/left-arrow.svg" alt="left-arrow">
+            Back
+          </button>
+          <div class="m-0">
+            <button class="btn bg-transparent fw600" data-dismiss="modal">Skip survey</button>  
+            <button type="button" class="btn btn-primary fs15 fw600 my-0 ml-0" data-toggle="modal" data-target="#job-survey-step-1-2" data-dismiss="modal"> Finish </button>        
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <!-- job survey 2-2 Modal -->
+  <div class="modal fade modal-top" id="job-survey-step-2-2" tabindex="-1" role="dialog" aria-labelledby="job-survey-step-2-2-Label"
+  aria-hidden="true">
+    <div class="modal-dialog modal-lg with-shadow" role="document">
+      <div class="modal-content radius12 p30 pt12">
+        <div class="modal-header border-0 pb-0 py-2 px-0">
+          <div class="w-100 text-center"><span class="fw600">2</span><span style="color:#CCCCCC"> | </span><span class="text-secondary">2</span></div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt="close-dark"></span>
+          </button>
+        </div>
+        <div class="modal-body pb20 px-0 pt-2 border-0">
+          <div class="survey-title">
+            <h5 class="modal-title fw600 fs17" id="job-survey-step-2-2-Label">Sorry to hear that! Share us the reason</h5>
+            <span class="text-secondary">Choose one or more answers</span>            
+          </div>
+          <div class="survey-form mt-4">
+            <form action="" id="step-2-2-form">
+              <div class="radius12 border border-color-light-gray px12 mb-3 able-to-hire-container">
+                <div class="custom-control custom-radio square-radio solid-radio-bg">
+                  <input type="checkbox" class="custom-control-input" id="reason-1" name="reason" checked>
+                  <label class="custom-control-label col px-0" for="reason-1">
+                    <span class="pl12 py12">Not enough applications</span>
+                  </label>
+                </div>                
+              </div>
+              <div class="radius12 border border-color-light-gray px12 mb-3 able-to-hire-container">
+                <div class="custom-control custom-radio square-radio solid-radio-bg">
+                  <input type="checkbox" class="custom-control-input" id="reason-2" name="reason">
+                  <label class="custom-control-label col px-0" for="reason-2">
+                    <span class="pl12 py12">Bad quality of candidate</span>
+                  </label>
+                </div>
+              </div>
+              <div class="radius12 border border-color-light-gray px12 mb-3 able-to-hire-container">
+                <div class="custom-control custom-radio square-radio solid-radio-bg">
+                  <input type="checkbox" class="custom-control-input" id="reason-3" name="reason">
+                  <label class="custom-control-label col px-0" for="reason-3">
+                    <span class="pl12 py12">Unable to screen candidates</span>
+                  </label>
+                </div>
+              </div>
+              <div class="radius12 border border-color-light-gray px12 able-to-hire-container">
+                <div class="custom-control custom-radio square-radio solid-radio-bg">
+                  <input type="checkbox" class="custom-control-input" id="reason-4" name="reason">
+                  <label class="custom-control-label col px-0" for="reason-4">
+                    <span class="pl12 py12">Other reason</span>
+                  </label>
+                </div>
+                <div class="form-group hidden-textarea overflow-hidden" id="other-reason-text">
+                  <textarea class="form-control" id="other-reason" placeholder="Specify the reason here" rows="3"></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between border-0 px-0 pb-0 pt20">
+          <button type="button" class="btn bg-transparent fs14 fw600 m-0 p-0" data-dismiss="modal" data-toggle="modal" data-target="#job-survey-step-1">
+            <img class="mr-3" src="assets/icons/left-arrow.svg" alt="left-arrow">
+            Back
+          </button>
+          <div class="m-0">
+            <button class="btn bg-transparent fw600" data-dismiss="modal">Skip survey</button>  
+            <button type="button" class="btn btn-primary fs15 fw600 my-0 ml-0" data-toggle="modal" data-target="#job-survey-step-1-2" data-dismiss="modal">
+            Finish
+            </button>        
+          </div>
+
+
         </div>
       </div>
     </div>
