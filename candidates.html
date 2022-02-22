@@ -248,6 +248,68 @@
     </div>
   </div>
 
+  <!-- inviting to interview Modal -->
+  <div class="modal fade modal-top" id="invite-to-interview" tabindex="-1" role="dialog" aria-labelledby="invite-to-interview-Label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg with-shadow" role="document">
+      <div class="modal-content radius12 p30 pt12">
+        <div class="modal-header border-0 pb-0 pt-2 pb-3 px-0">
+          <div>
+            <h5 class="modal-title fw600 mb-3 fs17" id="invite-to-interview-Label">Inviting to an interview? Add Calendly link</h5>
+            <span>Add <ins>Calendly</ins> link to schedule interviews with candidates. They will get the link once their status is changed to “Shortlisted”.</span>
+          </div>
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt="close-dark"></span>
+          </button>
+        </div>
+        <div class="modal-body pb20 px-0 pt-3 border-0">
+          <div class="form-group">
+            <label for="calendly-link">Calendly link</label>
+            <input type="text" class="form-control" id="calendly-link" placeholder="Calendly link">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between border-0 px-0 pb-0 pt20">
+          <div class="m-0">
+            <button class="btn bg-transparent fw600 pl-0" data-dismiss="modal">Cancel</button>
+          </div>
+          <div class="m-0">
+            <button type="button" class="btn btn-primary fs15 fw600 my-0 ml-0" data-toggle="modal" data-target="#shortlisted-success" data-dismiss="modal">Add Link</button>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- shortlisted success Modal -->
+  <div class="modal fade modal-top" id="shortlisted-success" tabindex="-1" role="dialog" aria-labelledby="shortlisted-success-Label"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg with-shadow" role="document">
+    <div class="modal-content radius12 p30 pt12">
+      <div class="modal-header border-0 pb-0 pt-2 pb-3 px-0">
+        <div>
+          <h5 class="modal-title fw600 mb-3 fs17" id="shortlisted-success-Label">Success! Status is changed to “Shortisted”</h5>
+          <span>Candidate will get the invite link</span>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="assets/icons/close-dark.svg" alt="close-dark"></span>
+        </button>
+      </div>
+      <div class="modal-body pb20 px-0 pt-3 border-0">
+
+      </div>
+      <div class="modal-footer justify-content-between border-0 px-0 pb-0 pt20">
+        <div class="m-0">
+          <a class="btn bg-transparent fw600 pl-0" href="candidates.html" data-dismiss="modal">Back to Candidates</a>
+        </div>
+        <div class="m-0">
+          <a class="btn btn-primary fs15 fw600 m-0" href="chat.html">Go to Chat</a>        
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
   <!-- header -->
   <header>
     <!-- nav -->
@@ -573,8 +635,7 @@
 
                     <!-- left-side-footer -->
 
-                    <div
-                      class="left-side-footer pt20 mt-3 flex-center-vh justify-content-between border-top border-secondary">
+                    <div class="left-side-footer pt20 mt-3 flex-center-vh justify-content-between border-top border-secondary">
                       <div>
                         <span class="fs14 fw400">Showing: 5 of 27</span>
                       </div>
@@ -785,7 +846,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -1195,7 +1256,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -1608,7 +1669,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -2022,7 +2083,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -2034,20 +2095,17 @@
                             <!-- TAB -->
 
                             <div class="info-tabs pb-3 mb-3">
-                              <ul class="nav nav-tabs pb-2 mb-3 border-bottom" id="candidate-info-tab-links"
-                                role="tablist">
+                              <ul class="nav nav-tabs pb-2 mb-3 border-bottom" id="candidate-info-tab-links" role="tablist">
                                 <li class="nav-item" role="presentation">
                                   <a class="nav-link link-line ml-0 active" id="about-tab" data-toggle="tab"
                                     href="#about-3" role="tab" aria-controls="About" aria-selected="true">About</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <a class="nav-link link-line" id="experience-tab" data-toggle="tab"
-                                    href="#experience-3" role="tab" aria-controls="Experience"
+                                  <a class="nav-link link-line" id="experience-tab" data-toggle="tab" href="#experience-3" role="tab" aria-controls="Experience"
                                     aria-selected="false">Experience</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <a class="nav-link link-line" id="education-tab" data-toggle="tab" href="#education-3"
-                                    role="tab" aria-controls="Education" aria-selected="false">Education</a>
+                                  <a class="nav-link link-line" id="education-tab" data-toggle="tab" href="#education-3" role="tab" aria-controls="Education" aria-selected="false">Education</a>
                                 </li>
                               </ul>
 
@@ -2695,7 +2753,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -3116,7 +3174,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -3530,7 +3588,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -3944,7 +4002,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -4602,7 +4660,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -5013,7 +5071,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -5427,7 +5485,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -5842,7 +5900,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -6501,7 +6559,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -6913,7 +6971,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -7328,7 +7386,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -7743,7 +7801,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -8402,7 +8460,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -8814,7 +8872,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -9229,7 +9287,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -9643,7 +9701,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -10302,7 +10360,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -10713,7 +10771,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -11127,7 +11185,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -11541,7 +11599,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -12200,7 +12258,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -12612,7 +12670,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -13027,7 +13085,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
@@ -13442,7 +13500,7 @@
                                     <ul class="list-unstyled dropdown-links-list mb-0">
                                       <li><a class="dropdown-item" href="#!">Applied</a></li>
                                       <li><a class="dropdown-item" href="#!">Shortlisted</a></li>
-                                      <li><a class="dropdown-item" href="#!">Scheduled</a></li>
+                                      <li><a class="dropdown-item" data-toggle="modal" href="#invite-to-interview">Scheduled</a></li>
                                       <li><a class="dropdown-item" href="#!">Interviewed</a></li>
                                       <li><a class="dropdown-item" href="#!">Hired</a></li>
                                     </ul>
