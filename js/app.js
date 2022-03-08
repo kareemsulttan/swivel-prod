@@ -85,40 +85,49 @@ jQuery(document).ready(function ($) {
 });
 
 // change the next link if the reason (no) radio is checked
+
 const ableToHireForm = document.getElementById('able-to-hire-radio-form');
 const notAble = document.getElementById('not-able');
 const changeableNext = document.getElementById('conditional-next');
-ableToHireForm.addEventListener('click', function() {
-  if(notAble.checked) {
-    changeableNext.dataset.target = '#job-survey-step-2-2'
-  } else {
-    changeableNext.dataset.target = '#job-survey-step-1-2'
-  }
-})
+if (ableToHireForm != null) {
+  ableToHireForm.addEventListener('click', function () {
+    if (notAble.checked) {
+      changeableNext.dataset.target = '#job-survey-step-2-2'
+    } else {
+      changeableNext.dataset.target = '#job-survey-step-1-2'
+    }
+  })
+}
+
 
 // open texterea if other reason selected
 const stepTow = document.getElementById('step-2-2-form')
 const reasonFour = document.getElementById('reason-4')
 const otherReason = document.getElementById('other-reason-text')
-stepTow.addEventListener('click', function() {
-  if(reasonFour.checked) {
-    otherReason.classList.remove('hidden-textarea')
-  } else {
-    otherReason.classList.add('hidden-textarea')
-  }
-})
+if (stepTow != null) {
+  stepTow.addEventListener('click', function () {
+    if (reasonFour.checked) {
+      otherReason.classList.remove('hidden-textarea')
+    } else {
+      otherReason.classList.add('hidden-textarea')
+    }
+  })
+}
+
+
 
 // duplicate page
 
 const duplicateContainer = document.querySelectorAll('.duplicate-form-container')
 
 duplicateContainer.forEach(function (elem) {
-  const editContainer = elem.querySelector('.edit-container')
-  const editCurrent = elem.querySelector('.edit-current')
-  const editValue = elem.querySelector('.edit-value')
-  const saveValue = elem.querySelector('.save-value')
-  const updatedValue = elem.querySelector('.updated-value')
-  const deleteCurrent = elem.querySelector('.delete-current')
+  const editContainer = elem.querySelectorAll('.edit-container')
+  const editCurrent = elem.querySelectorAll('.edit-current')
+  const editValue = elem.querySelectorAll('.edit-value')
+  const saveValue = elem.querySelectorAll('.save-value')
+  const updatedValue = elem.querySelectorAll('.updated-value')
+  const deleteCurrent = elem.querySelectorAll('.delete-current')
+  const cancelEdit = elem.querySelectorAll('.cancel-edit')
 
   $(editCurrent).click(function () {
     $(this).addClass('d-none');
@@ -128,9 +137,12 @@ duplicateContainer.forEach(function (elem) {
     $(deleteCurrent).addClass('float-right ml-3')
     $(editContainer).css('height', $(editValue).height() + 'px');
     $('#questions .edit-current').addClass('d-none')
+    $(cancelEdit).removeClass('d-none')
+    $('.profile-form-group').removeClass('border-bottom', 'border-color-eb')
+    $('.profile-bottom-nav').addClass('border-top', 'border-color-eb')
   })
 
-  $(saveValue).click(function () {
+  $(saveValue).add($(cancelEdit)).click(function () {
     $(editValue).removeClass('active');
     $(saveValue).removeClass('active');
     $(updatedValue).removeClass('d-none')
@@ -138,6 +150,9 @@ duplicateContainer.forEach(function (elem) {
     $(editContainer).css('height', 'auto');
     $(deleteCurrent).removeClass('float-right ml-3')
     $('#questions .edit-current').removeClass('d-none')
+    $(cancelEdit).addClass('d-none')
+    $('.profile-form-group').addClass('border-bottom', 'border-color-eb')
+    $('.profile-bottom-nav').removeClass('border-top', 'border-color-eb')
   })
 })
 const confirmDeleteImg = document.getElementById('confirm-delete-img')
@@ -150,24 +165,38 @@ jobsNav.forEach(function (ele) {
 })
 
 const shrinkBtn = document.getElementById('shrink-btn');
+if (shrinkBtn != null) {
+  shrinkBtn.addEventListener('click', function () {
+    $('.chat-right-side').toggleClass('active')
+    $('.chat-left-side').toggleClass('chat-left-side-space')
+    $('.expand-toggle').toggleClass('d-none')
+  })
+}
 
-shrinkBtn.addEventListener('click', function() {
-  $('.chat-right-side').toggleClass('active')
-  $('.chat-left-side').toggleClass('chat-left-side-space')
-  $('.expand-toggle').toggleClass('d-none')
-})
 
 function changeToSave() {
   const questionNav = document.getElementById('questions-tab')
   const nextBtn = document.getElementById('next-btn')
-  if (questionNav.classList.contains('active')) {
-    nextBtn.textContent = 'Save'
-    nextBtn.classList.remove('disabled')
+  if (questionNav != null) {
+    if (questionNav.classList.contains('active')) {
+      nextBtn.textContent = 'Save'
+      nextBtn.classList.remove('disabled')
+    }
   }
+
 }
 changeToSave();
 
-$(".job-card").click(function(){
-  window.location=$(this).find("a").attr("href"); return false;
+$(".job-card").click(function () {
+  window.location = $(this).find("a").attr("href"); return false;
 });
 
+const changePassGroupContainer = document.querySelectorAll('.change-pass-group')
+changePassGroupContainer.forEach(function (passContainer) {
+  const passInput = passContainer.querySelectorAll('.form-control')
+  if ($(passInput).hasClass('is-invalid')) {
+    $(passContainer).addClass('mb30')
+  } else {
+    $(passContainer).removeClass('mb30')
+  }
+})

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <a class="navbar-brand" href="#">
+        <img src="assets/logo.svg" alt="logo">
+      </a>
+    </nav> <!-- end nav -->
+  </header> <!-- end header -->
+
+  <!-- main -->
+  <main class="flex-grow-1">
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col bg-white profile-container with-shadow radius12 p-0">
+            <div class="d-flex h-100">
+              <div class="privacy-nav profile-nav col px-3 pt20 pb30 border-right pr-0">
+                <div class="d-flex flex-column justify-content-between h-100">
+                  <div>
+                    <div class="main-title">
+                      <h2 class="fw600 fs17 mb-4">Profile</h2>
+                    </div>
+                    <ul class="nav nav-tabs flex-column" id="privacy-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link link-line active" id="account-tab" data-toggle="tab" href="#account" role="tab"
+                          aria-controls="account" aria-selected="true">Account</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link link-line" id="change-password-tab" data-toggle="tab" href="#change-password"
+                          role="tab" aria-controls="change-password" aria-selected="false">Change password</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link link-line" id="schedule-tab" data-toggle="tab" href="#schedule" role="tab"
+                          aria-controls="schedule" aria-selected="false">Schedule</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link link-line" id="terms-conditions-tab" href="privacy-policy.html"
+                          role="tab" aria-controls="terms-conditions" aria-selected="false">Terms & Conditions</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link link-line pb-0 mb-0" id="privacy-tab" href="privacy-policy.html"
+                          role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
+                      </li>
+                    </ul>                  
+                  </div>
+                  <div>
+                    <a class="fw500 text-black link-line" href="#">Logout</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col px-0 pt20">
+                <div class="tab-content" id="privacytabs-content">
+                  <!-- Account tab -->
+                  <div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
+                    <div class="main-title px30">
+                      <h2 class="fw600 fs17 mb12 pb20">Account</h2>
+                    </div>
+                    <div class="avatar-container pb20 mb-2 px30">
+                      <div class="avatar avatar-lg avatar-circle overflow-default">
+                        <div class="position-absolute edit-avatar">
+                          <button class="btn p-0 radius8 with-shadow flex-center-vh">
+                            <img src="assets/icons/pen-white.svg" alt="pen-white">
+                          </button>
+                        </div>
+                        <img class="w-100" src="assets/avatar-border.svg" alt="avatar">
+                        <img class="avatar-img" src="assets/avatar-lg.png" alt="avatar">
+                      </div>
+                    </div>
+                    <div class="profile-info">
+                      <form action="">
+                        <div class="duplicate-form-container">
+                          <div class="profile-form-group-container pl30 thin-scrollbar">
+                            <div class="form-group profile-form-group border-bottom border-color-eb mb20 pb-2">
+                              <label class="w-100 fw400 fs13 mb-2" for="profile-first-name">First name</span></label>
+                              <div class="edit-container">
+                                <div class="edit-value">
+                                  <input type="text" class="form-control" id="profile-first-name"
+                                    placeholder="First name" value="John">
+                                </div>
+                                <div class="updated-value pb12">
+                                  <span class="fs15">John</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group profile-form-group border-bottom border-color-eb mb20 pb-2">
+                              <label class="w-100 fw400 fs13 mb-2" for="profile-last-name">Last name</span></label>
+                              <div class="edit-container">
+                                <div class="edit-value">
+                                  <input type="tel" class="form-control" id="profile-last-name" placeholder="Last name"
+                                    value="Smith">
+                                </div>
+                                <div class="updated-value pb12">
+                                  <span class="fs15">Smith</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group profile-form-group border-bottom border-color-eb mb20 pb-2">
+                              <label class="w-100 fw400 fs13 mb-2" for="profile-phone-number">Phone
+                                number</span></label>
+                              <div class="edit-container">
+                                <div class="edit-value">
+                                  <input type="tel" class="form-control" id="profile-phone-number"
+                                    placeholder="Phone number" value="+ 440 123 10 25">
+                                </div>
+                                <div class="updated-value pb12">
+                                  <span class="fs15">+ 440 123 10 25</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group profile-form-group border-bottom border-color-eb mb20 pb-2">
+                              <label class="w-100 fw400 fs13 mb-2" for="profile-date-of-birth">Date of
+                                birth</span></label>
+                              <div class="edit-container">
+                                <div class="edit-value">
+                                  <input type="date" class="form-control" id="profile-date-of-birth"
+                                    placeholder="Date of birth" value="12.02.1992">
+                                </div>
+                                <div class="updated-value pb12">
+                                  <span class="fs15">12.02.1992</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="flex-center-vh justify-content-between profile-bottom-nav px30 py12">
+                            <span class="btn btn-primary edit-current">Edit</span>
+                            <span class="fw500 cancel-edit d-none p-2">Cancel</span>
+                            <span class="btn btn-primary save-value">Save</span>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <!-- Change password tab -->
+                  <div class="tab-pane fade" id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
+                    <div class="main-title px30">
+                      <h2 class="fw600 fs17 mb12 pb20">Change password</h2>
+                    </div>
+                    <div class="profile-info profile-change-pass px30">
+                      <form action="">
+                        <div class="form-group position-relative change-pass-group mb-4">
+                          <label for="current-password">Current password</label>
+                          <!--add class (is-invalid) if the password isn't correct-->
+                          <input type="password" class="form-control with-show-hide-pass" id="current-password" placeholder="Current password">
+                          <div class="input-group-append position-absolute right-btn-icon">
+                            <span class="show-hide-pass-btn" id="show-pass" onclick="showPass()"><img src="assets/icons/eye.svg" alt="eye"></span>
+                          </div>
+                          <div id="validation-password" class="invalid-feedback fs13 position-absolute">
+                            Incorrect password
+                          </div>
+                        </div>
+                        <div class="mb-4">
+                          <a class="text-black fs15 text-underline" href="forgot-password.html">Forget password?</a>
+                        </div>
+                        <div class="form-group position-relative change-pass-group mb-4">
+                          <label for="new-password">New password</label>
+                          <!--add class (is-invalid) if the password isn't correct-->
+                          <input type="password" class="form-control with-show-hide-pass" id="new-password" placeholder="New password">
+                          <div class="input-group-append position-absolute right-btn-icon">
+                            <span class="show-hide-pass-btn" id="show-pass" onclick="showPass()"><img src="assets/icons/eye.svg" alt="eye"></span>
+                          </div>
+                          <div id="validation-password" class="invalid-feedback fs13 position-absolute">
+                            Incorrect password
+                          </div>
+                        </div>
+                        <div class="form-group position-relative change-pass-group mb-4">
+                          <label for="confirm-new-password">Confirm new password</label>
+                          <!--add class (is-invalid) if the password isn't correct-->
+                          <input type="password" class="form-control with-show-hide-pass" id="confirm-new-password" placeholder="Confirm new password">
+                          <div class="input-group-append position-absolute right-btn-icon">
+                            <span class="show-hide-pass-btn" id="show-pass" onclick="showPass()"><img src="assets/icons/eye.svg" alt="eye"></span>
+                          </div>
+                          <div id="validation-password" class="invalid-feedback fs13 position-absolute">
+                            Incorrect password
+                          </div>
+                        </div>
+                        <div>
+                          <button type="submit" class="btn btn-primary">Update password</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="schedule" role="tabpanel" aria-labelledby="schedule">
+                    <div class="main-title px30 mb30">
+                      <h2 class="fw600 fs17 mb12 pb20">Change password</h2>
+                      <p>
+                        We use <ins>Calendly</ins> to allow employers schedule interviews. Candidates will get the link once their status is changed to “Shortlisted”
+                      </p>
+                    </div>
+                    <div class="px30">
+                    <form action="">
+                        <div class="form-group">
+                          <label for="calendly-link">Calendly link</label>
+                          <input type="text" class="form-control" id="calendly-link" placeholder="Calendly link">
+                        </div>  
+                        <div>
+                          <button type="submit" class="btn btn-primary">Add link</button>
+                        </div>                    
+                      </form>                      
+                    </div>
+ 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+  </main> <!-- end main -->
+
+  <!-- footer -->
+  <footer class="flex-center-vh justify-content-between px30 py12 fs12 fw400">
+    <div>
+      <p class="m-0 text-info">©2021 swivel</p>
+    </div>
+    <div>
+      <a class="text-info mr-4" href="#">terms & conditions</a>
+      <a class="text-info" href="#">privacy policy</a>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
